@@ -1,0 +1,141 @@
+html, body{
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header .top-nav .title {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+    text-align: center;
+}
+
+
+.under-nav h3 {
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.under-nav .use_role{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.under-nav .agree {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.under-nav .agree .form-check{
+    position: relative;
+}
+
+.under-nav .agree .form-check .form-check-input{
+    position: absolute;
+}
+
+.main .content{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.main .content .join-box{
+    text-align: center;
+}
+
+.main .content .join-box legend{
+    font-weight: 700;
+    text-align: left;
+    font-style: oblique;
+}
+
+.main .content .join-box .id_text {
+    font-weight: 700;
+    font-style: oblique;
+    text-align: left;
+    font-size: 12px;
+    color: red;
+}
+
+.main .content .join-box .section_private .info{
+    width: 500px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.main .content .join-box .section_private .id {
+    position: relative;
+}
+
+.main .content .join-box .section_private .id .check-btn{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 2.5px;
+    right: 90px;
+}
+
+.main .content .join-box .section_private .message{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 85px;
+    color: red;
+}
+
+.main .content .join-box .section_private .phone {
+    position: relative;
+}
+
+.main .content .join-box .section_private .phone .check-btn{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 2.5px;
+    right: 90px;
+}
+
+.main .content .join-box .section_private .nickname{
+    position: relative;
+}
+
+.main .content .join-box .section_private .nickname .check-btn{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 2.5px;
+    right: 90px;
+}
+
+.main .content .join-box .section_private .addr{
+    position: relative;
+}
+
+.main .content .join-box .section_private .addr .check-btn{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 2.5px;
+    right: 90px;
+}
+
+.main .content .join-box .section_private .birth{
+    position: relative;
+}
+
+.main .content .join-box .section_private .birth .check-btn{
+    width: 120px;
+    height: 35px;
+    position: absolute;
+    top: 2.5px;
+    right: 90px;
+}
+.main .content .join-box .section_private .btn{
+    width: 170px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,146 @@
+.main .container .content-header h3 {
+    font-style: oblique;
+    font-weight: 700;
+    color: slategrey;
+}
+
+.main .container .content-header p {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.main .container .content-header p:nth-child(3){
+    color: red;
+}
+
+.main .container .section .article-header .article-title .link-board {
+    color: #03c75a;
+    font-size: 13px;
+}
+
+.main .container .section .article-header{
+    border-bottom: 1px solid slategrey ;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.main .container .section .article-header .article-title .title_area{
+    font-size: 27px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main .container .section .article-header .article-profile .article-writer{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+.main .container .section .article-header .article-profile .article-info{
+    line-height: 13px;
+    font-size: 12px;
+}
+
+.main .container .section .article-main{
+    margin-bottom: 20px;
+}
+
+.main .container .section .article-main .main-content{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", 돋움, dotum, sans-serif;
+}
+
+
+
+
+.main .container .section .reply-info .reply-box{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main .container .section .reply-info .reply-box .article-like{
+    float: left;
+    margin-right: 20px;
+}
+
+.main .container .section .reply-info .reply-box .article-like .like .like-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main .container .section .reply-info .reply-box .article-reply .reply .reply-icon{
+    font-size: 24px;
+}
+
+
+.main .container .section .comment-box .comment-list .comment-item{
+    list-style: none;
+    border-bottom: 1px solid slategrey ;
+    border-top: 1px solid slategrey ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main .container .section .comment-box .comment-list .comment-item .comment-writer{
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.main .container .section .comment-box .comment-list .comment-item .comment-content{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main .container .section .comment-box .comment-list .comment-item .comment-footer{
+    font-size: 12px;
+    color: darkgray;
+}
+
+.main .container .section .write-box .write-content .writer{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.main .container .section .write-box .write-content .comment-btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.main .container .section .write-box .write-content .comment-btn .btn{
+    width: 80px;
+}
+
+.main .container .section .banner .slide {
+    width: 100%;
+    padding-top: 20%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .container .section .banner .slide .carousel-inner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .container .section .banner .slide .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,58 @@
+{{>layouts/findheader}}
+<div class="container">
+    <div class="content">
+        <div class="content_header">
+            <h2>아이디 찾기</h2>
+            <p>
+                회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야합니다. <br>
+                전화번호 형식은 010-xxxx-xxxx 형식입니다.
+            </p>
+        </div>
+
+        <div class="section">
+            <form id="findIdForm">
+                <fieldset>
+                    <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <legend>< 회원 정보 조회 > </legend>
+                        <div class="name">
+                            <input type="text" id="name" class="input input-name" name="userName" value title="이름" placeholder="이름 : ">
+                        </div>
+
+                        <!-- 오류메시지 -->
+                        <div id="name-message" class="message"></div>
+
+                        <div class="phone">
+                            <input type="text" id="phone" class="input input-phone" name="phoneNumber" value title="phone" placeholder="전화번호 : ">
+                        </div>
+
+                        <!-- 오류메시지 -->
+                        <div id="phone-message" class="message"></div>
+
+                        <div class="search_btn">
+                            <button type="submit" class="btn btn-outline-primary">조회</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 아이디 조회 결과 알림창-->
+<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="font-weight: 700;" class="modal-title fs-5" id="idModalLabel">아이디 찾기 결과</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{>layouts/findfooter}}

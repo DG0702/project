@@ -1,0 +1,18 @@
+{{>layouts/header}}
+<form class="container" action="/articles/create" method="post">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">제목</label>
+        <input type="text" class="form-control" name="title" id="formGroupExampleInput">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+        <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-info">전송</button>
+        <button type="button" class="btn btn-info">
+            <a href="/articles" class="text-white text-decoration-none">뒤로가기</a>
+        </button>
+    </div>
+</form>
+{{>layouts/footer}}

@@ -1,0 +1,114 @@
+{{>layouts/homeheader}}
+<main id="main">
+    <div class="container ">
+        <!--상단 섹션-->
+        <div class="row up-container mt-3">
+            <!-- 지구온난화-->
+            <div class="up-left col-12 col-md-6">
+                <div class="global-warming mb-3">
+                    <div class="img-box">
+                        <a href="/home/meaning">
+                            <img class="img img-fluid" src="/bootstrap-5.3.3-dist/img/home/grobal_warming.png"
+                                 alt="grobal_warming">
+                        </a>
+                        <a href="/home/meaning" class="text-white text-decoration-none img-title">
+                            지구온난화
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up-right col-12 col-md-6">
+                <!--로그인, 회원가입-->
+                <div class="col-12 col-md-6 ">
+                    <div class="login-join mb-3">
+                        <div class="login-box">
+                            <a href="/login-page" class="text-decoration-none">
+                                <button class="login-button text-white">로그인</button>
+                            </a>
+
+                        </div>
+                        <div class="join-box">
+                            <a href="/users/join" class="text-decoration-none">
+                                <button class="join-button text-white">회원가입</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--게시판 -->
+                <div class="col-12">
+                    <div class="board">
+                        <div class="board-box">
+                            <a href="#" class="text-decoration-none">
+                                <button class="board-button text-white" onclick="showConfirm()">지구온난화 자유게시판</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--하단 섹션-->
+        <div class="row under-container mt-3 mb-3">
+            <!--이상현상-->
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box ac-box">
+                    <div class="img-box">
+                        <a href="/home/heterology">
+                            <img class="img img-fluid" src="/bootstrap-5.3.3-dist/img/home/heterology.jpg" alt="heterology">
+                        </a>
+                        <a href="/home/heterology" class="text-white text-decoration-none img-title">
+                            이상현상
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--미래예측 -->
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box fu-box">
+                    <div class="img-box">
+                        <a href="/home/forecast">
+                            <img class="img img-fluid" src="/bootstrap-5.3.3-dist/img/home/forecast.jpg" alt="forecast">
+                        </a>
+                        <a href="/home/forecast" class="text-white text-decoration-none img-title">
+                            미래예측
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--해결방안-->
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box so-box">
+                    <div class="img-box">
+                        <a href="/home/solution_plan">
+                            <img class="img img-fluid" src="/bootstrap-5.3.3-dist/img/home/solution.png" alt="solution">
+                        </a>
+                        <a href="/home/solution_plan" class="text-white text-decoration-none img-title">
+                            해결방안
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--뉴스-->
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box news-box">
+                    <div class="img-box">
+                        <a href="/home/news">
+                            <img class="img img-fluid" src="/bootstrap-5.3.3-dist/img/home/news.png" alt="news">
+                        </a>
+                        <a href="/home/news" class="text-white text-decoration-none img-title">
+                            뉴스
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{{>layouts/homefooter}}

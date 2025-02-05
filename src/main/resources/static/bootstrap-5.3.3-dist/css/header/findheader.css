@@ -1,0 +1,45 @@
+html, body{
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.header .nav .navbar-brand{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.footer .container {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.footer .container  {
+    text-align: center;
+}
+
+.footer .container .content .info-a {
+    padding-top: 10px;
+    height: 35px;
+}
+
+.footer .container .content .info-b {
+}
+
+.footer .container .content .icon{
+    font-size: 30px;
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+}
+
+.footer .container .content .ver{
+    display: inline-block;
+    color: white;
+}

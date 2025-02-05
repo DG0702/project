@@ -1,0 +1,63 @@
+.container .content .content_header {
+    margin-top: 20px;
+}
+
+.container .content .content_header h2 {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue ;
+    font-weight: 700;
+}
+
+.container .content .content_header p {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+
+.container .content .section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.container .content .section .section_private{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+
+.container .content .section .section_private legend{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .name {
+    margin-top: 130px;
+}
+
+.container .content .section .section_private .name .input-name{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.container .content .section .section_private .phone{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .phone .input-phone{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.container .content .section .section_private .search_btn{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .search_btn .btn{
+    width: 70%;
+}

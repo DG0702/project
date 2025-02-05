@@ -1,0 +1,31 @@
+{{>layouts/header}}
+<table class="container table table-dark table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">TITLE</th>
+        <th scope="col">CONTENT</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#article}}
+    <tr>
+        <th>{{id}}</th>
+        <td>{{title}}</td>
+        <td>{{content}}</td>
+    </tr>
+    {{/article}}
+    </tbody>
+</table>
+<div class="container">
+    <button class="btn btn-outline-secondary">
+        <a href="/articles" class="text-white text-decoration-none">목록으로</a>
+    </button>
+    <button class="btn btn-outline-secondary">
+        <a href="/articles/{{id}}/edit" class="text-white text-decoration-none">수정</a>
+    </button>
+    <button class="btn btn-danger">
+        <a href="/articles/{{id}}/delete" class="text-white text-decoration-none">삭제</a>
+    </button>
+</div>
+{{>layouts/footer}}

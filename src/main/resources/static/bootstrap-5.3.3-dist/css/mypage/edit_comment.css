@@ -1,0 +1,68 @@
+.container .content .content_header {
+    margin-top: 20px;
+}
+
+.container .content .content_header h2 {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue ;
+    font-weight: 700;
+}
+
+.container .content .content_header p {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.container .content .content_header p:nth-child(3){
+    color: red;
+}
+
+.container .content .section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.container .content .section .comment .section_private{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .content .section .comment .section_private .userNickname{
+    color: lightslategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content .section .comment .section_private .post-title {
+    color: burlywood;
+}
+
+
+.container .content .section .comment .section_private .post-content {
+    color: powderblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content .section .comment .section_private .comment-content{
+    width: 75%;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+
+
+.container .content .section .comment .section_private .comment-edit-btn{
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+
+
+

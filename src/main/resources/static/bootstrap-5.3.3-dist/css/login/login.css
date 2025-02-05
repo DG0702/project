@@ -1,0 +1,209 @@
+body{
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    position: relative;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.header .header_inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.header .header_inner .logo {
+    width: 155px;
+    height: 130px;
+    display: inline-block;
+    margin-top: 108px;
+    margin-right: 50px;
+}
+
+.header .header_inner .logo .blind {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.container{
+    position: relative;
+    height: 555px;
+}
+
+.container .content {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.login_box{
+    width: 410px;
+    height: 160px;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.login_box .id {
+    margin-left: 10px;
+    position: absolute;
+    top: 30px;
+}
+
+.login_box .id-message{
+    position: absolute;
+    top: 62px;
+    font-size: 14px;
+    text-align: center;
+    left: 20px;
+}
+
+
+.login_box .id .input-id {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2px;
+    color: #1e1e23;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+}
+
+
+.login_box .id .text_label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2px;
+    color: gray;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+.login_box .pw{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.login_box .pw-message{
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    left: 20px;
+
+}
+
+.login_box .pw .input-pw{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2px;
+    color: #1e1e23;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+}
+
+.login_box .pw .text_label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -2px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.login_wrap .btn_login_wrap{
+    margin-top: 20px;
+}
+
+.login_wrap .btn_login_wrap .btn_login{
+    width: 410px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+}
+
+
+.find_wrap li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+.find_wrap li .find_text{
+    color: gray
+}
+
+
+.find_wrap li + li::before {
+    content: "|";
+    margin-right: 20px;
+}
+
+.banner .slide{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.banner .slide .carousel-inner{
+    height: 300px;
+}
+
+.banner .slide .carousel-inner .carousel-item img{
+    width: 600px;
+    height: 400px;
+}
+
+
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 90px;
+}
+
+.footer li {
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.footer li .footer_item{
+    color: gray;
+}
+
+.footer .footer_link  {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer .footer_copy{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+
+

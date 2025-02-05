@@ -1,0 +1,119 @@
+.main .container .meaning_explain {
+    background-color: ghostwhite;
+    text-align: center;
+
+}
+
+
+.main .container .meaning_explain .explain_title h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    color: indianred;
+}
+
+.main .container .meaning_explain .section{
+    font-size: 14px;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main .container .meaning_explain .section .section_explain{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+.main .container .meaning_explain .section .meaning_section_img{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.main .container .meaning_explain .section .section_title{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.main .container .meaning_explain .section .section_title .box{
+    border-bottom: 1px solid darkgray;
+    margin: 0 auto;
+}
+
+
+
+.main .container .meaning_explain .section .section_title .text_title{
+    color: cornflowerblue;
+    font-size: 18px;
+}
+
+.main .container .meaning_explain .article {
+    font-size: 14px;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.main .container .meaning_explain .article .article_text{
+    color: #03c75a;
+}
+
+.main .container .meaning_explain .article .article-img{
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+.main .container .meaning_explain .main_img{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.main .container .meaning_explain .explain_mean{
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main .container .meaning_explain .explain_mean .gas{
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+}
+
+
+.main .container .meaning_explain .explain_mean .warming{
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+}
+
+
+
+.main .container .meaning_explain .explain_mean .text_point{
+    background-color: khaki;
+    width: 100px;
+    margin: 20px;
+}
+
+
+
+.main .container .meaning_explain .temp{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.main .container .meaning_explain .temp .tem{
+    height: 500px;
+}

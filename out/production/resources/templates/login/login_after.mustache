@@ -1,0 +1,109 @@
+{{>layouts/loginheader}}
+
+<main id="main">
+    <div class="container">
+        <div class="row up-container mt-3">
+            <div class="up-left col-12 col-md-6">
+                <div class="global-warming mb-3">
+                    <div class="img-box">
+                        <a href="/after/meaning">
+                            <img class="img" src="/bootstrap-5.3.3-dist/img/home/grobal_warming.png" alt="#">
+                        </a>
+                        <a href="/after/meaning" class="text-white text-decoration-none img-title">
+                            지구온난화
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up-right col-12 col-md-6">
+                <div class="col-12 col-md-6">
+                    <div class="logout-mypage mb-3">
+                        <div class="logout-box">
+                            <a href="/logout" class="text-decoration-none">
+                                <button class="logout-button text-white">로그아웃</button>
+                            </a>
+
+                        </div>
+                        <div class="mypage-box">
+                            <a href="users/mypage" class="text-decoration-none">
+                                <button class="mypage-button text-white">마이페이지</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="board" data-is-admin = {{isAdmin}}>
+                            <div class="board-box">
+                                <a href="/board" class="text-decoration-none">
+                                    <button id="board-post" class="board-button text-white">지구온난화 자유게시판</button>
+                                </a>
+                                {{#isAdmin}}
+                                    <a href="/comment" class="text-decoration-none">
+                                        <button id="board-comment" class="board-button text-white">게시판 댓글</button>
+                                    </a>
+                                {{/isAdmin}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row under-container mt-3 mb-3">
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box ac-box">
+                    <div class="img-box">
+                        <a href="/after/heterology">
+                            <img class="img" src="/bootstrap-5.3.3-dist/img/home/heterology.jpg" alt="#">
+                        </a>
+                        <a href="/after/heterology" class="text-white text-decoration-none img-title">
+                            이상현상
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box fu-box">
+                    <div class="img-box">
+                        <a href="/after/forecast">
+                            <img class="img" src="/bootstrap-5.3.3-dist/img/home/forecast.jpg" alt="#">
+                        </a>
+                        <a href="/after/forecast" class="text-white text-decoration-none img-title">
+                            미래예측
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box so-box">
+                    <div class="img-box">
+                        <a href="/after/solution_plan">
+                            <img class="img" src="/bootstrap-5.3.3-dist/img/home/solution.png" alt="#">
+                        </a>
+                        <a href="/after/solution_plan" class="text-white text-decoration-none img-title">
+                            해결방안
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 mb-2">
+                <div class="box news-box">
+                    <div class="img-box">
+                        <a href="/after/news">
+                            <img class="img" src="/bootstrap-5.3.3-dist/img/home/news.png" alt="#">
+                        </a>
+                        <a href="/after/news" class="text-white text-decoration-none img-title">
+                            뉴스
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{{>layouts/loginfooter}}

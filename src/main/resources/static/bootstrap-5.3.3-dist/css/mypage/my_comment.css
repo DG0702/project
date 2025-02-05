@@ -1,0 +1,36 @@
+.main .container .content-header h3 {
+    font-style: oblique;
+    font-weight: 700;
+    color: slategrey;
+}
+
+.main .container .content-header p {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.main .container .content-header p:nth-child(3){
+    color: red;
+}
+
+.main .container .total-check-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.main .container .total-check-box .total{
+    margin-right: 30px;
+    height: 35px;
+}
+
+.main .container .total-check-box .check-btn{
+    display: flex;
+}
+.main .container .total-check-box .check-btn .edit-btn{
+    margin-right: 10px;
+}
+
+

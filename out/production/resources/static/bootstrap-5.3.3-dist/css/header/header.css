@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+/* Body 스타일 */
+html, body {
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* 추가: 중요한 외부 레이아웃 요소에도 min-width 설정 */
+.container, .wrapper, .content {
+    min-width: 600px;
+    width: 100%;
+}
+
+/* 헤더 스타일 */
+.header .nav .navbar-brand {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.header .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* 내비게이션 바 */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 내비게이션 항목 */
+.nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+/* 반응형 내비게이션 */
+@media (max-width: 767px) {
+    .header .nav .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .header .nav-link {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+/* 푸터 스타일 */
+.footer {
+    background-color: #212121;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer .container .content .info-a {
+    padding-top: 10px;
+    height: 35px;
+}
+
+.footer .container .content .icon {
+    font-size: 30px;
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+}
+
+.footer .container .content .ver {
+    display: inline-block;
+    color: white;
+}
+
+/* 푸터 아이콘에 마우스 올리면 색상 변경 */
+.footer .container .content .icon i:hover {
+    color: #0d6efd;
+}

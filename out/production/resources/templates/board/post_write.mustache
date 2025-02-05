@@ -1,0 +1,71 @@
+{{>layouts/boardheader}}
+<div class="write_main">
+    <div class="container">
+        <div class="content-header">
+            <h3>게시물 글쓰기</h3>
+            <p>
+                여러분의 환경, 기후변화에 대해 여러가지 의견을 내주세요!!
+            </p>
+            <p>
+                ※경고※ <br>
+                불건전한 게시물, 댓글 발견시 즉시 삭제 될 수 있습니다 !!
+            </p>
+        </div>
+
+        <div class="section">
+
+            <!-- 오류메시지 표시 -->
+            <!-- 첨부파일 오류 발생 시  -->
+            {{#errorMessage}}
+            <div class="alert alert-danger" role="alert">
+                {{errorMessage}}
+            </div>
+            {{/errorMessage}}
+
+
+
+            <!--파일을 서버로 전송하기 위해 enctype = "multipart/form-data" 가 필요-->
+            <form id="postForm" action="/posts" method="post" enctype="multipart/form-data">
+                <div class="section_private  shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="content_title">
+                        <input type="text" class="input_title form-control" name="title" value title="title"
+                               placeholder="제목을 입력해주세요" maxlength="100">
+                    </div>
+
+                    <div class="content_content">
+                        <textarea class="input_content form-control" name="contents" cols="30" rows="10"  title="content"
+                                  placeholder="내용을 입력해주세요" maxlength="max"></textarea>
+                    </div>
+
+                    <div class="btn-set">
+                        <div class="btn-file">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" name="file" multiple>
+                            </div>
+                        </div>
+
+                        <div class="btn-regi">
+                            <button type="submit" class="btn btn-outline-secondary">
+                                등록
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="fileInfo">
+                        <p>
+                            ※첨부파일 항목유형 안내※
+                        </p>
+                        <p>
+                            이미지 : .jpg .png <br>
+                            비디오 : .mp4 .avi <br>
+                            문서 : .txt .doc .pdf .hwp
+                        </p>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+{{>layouts/boardfooter}}

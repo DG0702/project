@@ -1,0 +1,42 @@
+.main .container .news_explain {
+    background-color: ghostwhite;
+    text-align: center;
+
+}
+
+
+.main .container .news_explain .explain_title h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    color: cornflowerblue;
+}
+
+
+.main .container .news_explain  .article-header{
+    border-bottom: 1px solid slategrey ;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.main .container .news_explain  .article-header .article-title .title_area{
+    font-size: 27px;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main .container .news_explain  .article-main .article-img{
+    margin:0 auto;
+    width: 600px;
+    height: 500px;
+}
+
+.main .container .news_explain  .article-main{
+    margin-bottom: 20px;
+}
+
+
+

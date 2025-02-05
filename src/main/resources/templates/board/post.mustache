@@ -1,0 +1,174 @@
+{{>layouts/boardheader}}
+<div class="main">
+    <div class="container">
+        <div class="content-header">
+            <h3>게시물</h3>
+            <p>
+                여러분의 환경, 기후변화에 대해 여러가지 의견을 내주세요!!
+            </p>
+            <p>
+                ※경고※ <br>
+                불건전한 게시물, 댓글 발견시 즉시 삭제 될 수 있습니다 !!
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="container article shadow p-3 mb-5 bg-body-tertiary rounded">
+
+                {{#post}}
+                <div class="article-header">
+                    <div class="article-title">
+                        <a href="/board" class="link-board text-decoration-none mb-2">
+                            자유게시판 &gt;
+                        </a>
+                        <div class="title_area mt-2 mb-3">
+                            {{title}}
+                        </div>
+                    </div>
+
+                    <div class="article-profile">
+                        <div class="article-writer mb-2">
+                           작성자 : {{userNickname}}
+                        </div>
+                        <div class="article-info">
+                           작성날짜 : {{formattedCreateTime}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-main">
+                    <div class="main-content">
+                        {{contents}}
+
+                        <!-- 첨부파일 -->
+                        {{#hasAttachedFiles}}
+                            <div class="attachment my-4">
+                            <!--이미지-->
+                            {{#images}}
+                                <div class="image mb-3" style="text-align: center">
+                                    <img src="/uploads/{{.}}" alt="이미지 첨부파일" class="img-fluid rounded border border-light p-2" style="max-width: 70%">
+                                </div>
+                            {{/images}}
+
+                            <!--비디오-->
+                            {{#videos}}
+                                <div class="video mb-3" style="text-align: center">
+                                    <video controls class="img-fluid rounded border border-light p-2" style="max-width: 70%">
+                                        <source src="/uploads/{{.}}" type="video/mp4">
+                                        <!--브라우저가 지원하지 않을 경우-->
+                                         Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            {{/videos}}
+
+                            <!--문서-->
+                            {{#documents}}
+                                <div class="document mb-3" style="text-align: center">
+                                    <a href="/uploads/{{.}}" class="btn btn-primary" role="button" style="min-width: 120px">문서 다운로드</a>
+                                </div>
+                            {{/documents}}
+
+                            <!--파일 타입을 알 수 없을 경우(설정하지 않은 파일일 경우)-->
+                            {{#unknowns}}
+                                <div class="unknown mb-3">
+                                    <span class="text-danger fw-bold">알 수 없는 파일</span>
+                                </div>
+                            {{/unknowns}}
+                            </div>
+                        {{/hasAttachedFiles}}
+
+                    </div>
+                </div>
+
+
+
+                    <!--좋아요 스크립트 코드에서 사용-->
+                    <input type="hidden" id="userNo" value="{{userNo}}">
+                    <input type="hidden" id="boardId" value="{{boardId}}" >
+                {{/post}}
+
+                <div class="banner">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/bootstrap-5.3.3-dist/img/banner/beach.jpg" class="d-block w-100" alt="beach">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reply-info">
+                    <div class="reply-box">
+                        <div class="article-like">
+                            <a class="like text-decoration-none text-black">
+                                    <span id="LikeIcon" class="like-icon">
+                                        🤍
+                                    </span>
+                                <span class="like" >
+                                        좋아요
+                                    </span>
+                                <span id="LikeCount" class="like-count">
+                                        0
+                                    </span>
+                            </a>
+                        </div>
+
+                        <div class="article-reply">
+                            <a class="reply text-decoration-none text-black">
+                                    <span class="reply-icon">
+                                        <i class="bi bi-chat-dots"></i>
+                                    </span>
+                                <span class="reply">
+                                        댓글
+                                    </span>
+                                <span id="replyCount" class="reply-count">
+                                        {{commentCount}}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-box">
+                    <ul id="comment-list" class="comment-list">
+                        {{#commentList}}
+                            <li class="comment-item">
+                                <div class="comment-area">
+                                    <div id="show-writer" class="comment-writer">
+                                        {{userNickname}}
+                                    </div>
+                                    <div id="show-comment" class="comment-content">
+                                        {{comment}}
+                                    </div>
+                                    <div id="show-time" class="comment-footer">
+                                        {{formattedCreateTime}}
+                                    </div>
+                                </div>
+                            </li>
+                        {{/commentList}}
+                    </ul>
+
+
+                    <div class="write-box">
+                        <div class="write-content">
+                            <form id="comment-regi">
+                                <div id="writer" class="writer">
+                                    {{userNickName}}
+                                </div>
+                                <textarea id="comment" placeholder="댓글을 남겨주세요" name="comment_contents" class="comment-content form-control" cols="30" rows="10" ></textarea>
+                                <div class="comment-btn">
+                                    <button type="submit" class="btn btn-secondary">등록</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{>layouts/boardfooter}}

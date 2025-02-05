@@ -1,0 +1,94 @@
+{{>layouts/mypageheader}}
+<div class="container">
+    <div class="content">
+        <div class="content_header">
+            <h2>회원정보 수정</h2>
+            <p>
+                PW, 전화번호, 주소, 성별 수정 가능
+            </p>
+            <p>
+                ID(EMAIL), 닉네임 수정 불가 !!
+            </p>
+        </div>
+
+        <div class="section">
+            <form class="edit" id="login-section">
+                <fieldset>
+                    <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <legend>< 회원 정보 확인 > </legend>
+
+                        <div class="id">
+                            <input type="text" id="id" class="input input-id" name="userId" value title="pw" placeholder="아이디 : ">
+                        </div>
+
+                        <div id="id-message" class="message"></div>
+
+                        <div class="pw">
+                            <input type="password" id="pw" class="input input-pw" name="password" value title="phone" placeholder="비밀번호 : ">
+                        </div>
+
+                        <div id="pw-message" class="message"></div>
+
+                        <div class="search_btn">
+                            <button type="submit" class="btn btn-outline-primary">확인</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <div class="section" id="edit-section" style="display: none">
+            <form class="edit" id="edit-form">
+                <fieldset>
+                    <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <legend>< 회원 정보 수정 > </legend>
+
+                        <div class="id">
+                            <input type="text" id="data-id" class="input-id" name="userId" value title="id" disabled>
+                        </div>
+
+                        <div class="pw">
+                            <input type="text" id="edit-pw" class="input input-pw" name="password" value title="pw" placeholder="비밀번호 : ">
+                        </div>
+
+                        <div id="edit-pw-message" class="message"></div>
+
+                        <div class="phone">
+                            <input type="text" id="edit-phone" class="input input-phone" name="phoneNumber" value title="phone" placeholder="전화번호 : ">
+                        </div>
+
+                        <div id="edit-phone-message" class="message"></div>
+
+                        <div class="addr">
+                            <input type="text" id="edit-addr" class="input input-addr" name="addr" value title="addr" placeholder="주소 : ">
+                        </div>
+
+                        <div id="edit-addr-message" class="message"></div>
+
+                        <div class="gender">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="gender" value="M" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">남</label>
+
+                                <input type="radio" class="btn-check" name="gender" value="F" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">여</label>
+
+                                <input type="radio" class="btn-check" name="gender" value="선택안함" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio3">선택안함</label>
+                            </div>
+                        </div>
+
+                        <div class="search_btn">
+                            <button type="submit" class="btn btn-outline-primary">수정</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+{{>layouts/mypagefooter}}

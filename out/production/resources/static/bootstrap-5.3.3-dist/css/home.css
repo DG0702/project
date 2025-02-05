@@ -1,0 +1,195 @@
+#main{
+    width: 100%;
+    height: auto;
+}
+
+
+#main .up-container .global-warming .img-box{
+    /*width: 580px;*/
+    /*height: 500px;*/
+    position: relative;
+    padding-top: 86.21%;
+    overflow: hidden;
+}
+
+#main .up-container .global-warming .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .up-container .global-warming .img-box .img-title{
+    position: absolute;
+    top: 60px;
+    left: 35px;
+    font-weight: bold;
+}
+
+#main .up-container .up-right{
+    padding-top: 50px;
+    padding-left: 75px;
+}
+
+
+#main .up-container .login-join{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+#main .up-container .login-join .login-box .login-button{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+#main .up-container .login-join .join-box .join-button{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+#main .up-container .board{
+    position: relative;
+    width: 500px;
+    height: 150px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-right: 70px;
+    margin-top: 70px;
+}
+
+#main .up-container .board .board-box .board-button{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+
+
+#main .under-container .box .img-box{
+    position: relative;
+    width: 100%;
+    padding-top: 86.21%;
+    overflow: hidden;
+}
+
+#main .under-container .box .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .under-container .box .img-box .img-title{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    font-weight: bold;
+}
+
+
+
+/*768px 미만 (767px 포함)*/
+@media (max-width: 768px) {
+    #main .up-container .up-left .global-warming .img-box .img-title{
+        top: 45px;
+        left: 25px;
+    }
+    #main .up-container .up-right{
+        padding-left: 35px;
+        padding-top: 20px;
+    }
+}
+
+/* 768px 이상, 992px 미만 (768px부터 시작해서 991px까지) */
+@media (min-width:768px) and (max-width: 991px) {
+    #main .up-container .up-left .global-warming .img-box{
+        height: 430px;
+    }
+
+    #main .up-container .up-left .global-warming .img-box .img-title{
+        display: none;
+    }
+    #main .up-container .up-right{
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+
+    #main .up-container .up-right .login-join{
+        width: 300px;
+        height: 100px;
+    }
+
+    #main .up-container .login-join .login-box .login-button{
+        width: 100px;
+        height: 50px;
+
+    }
+
+    #main .up-container .login-join .join-box .join-button{
+        width: 100px;
+        height: 50px;
+
+    }
+
+    #main .up-container .board{
+        width: 300px;
+        height: 100px;
+
+    }
+
+    #main .up-container .board .board-box .board-button{
+        width: 200px;
+        height: 50px;
+    }
+
+}
+
+/* 992px 이상, 1200px 이하 (992px부터 시작해서 1200px까지) */
+@media(min-width: 992px) and (max-width: 1200px){
+    #main .up-container .up-right{
+        padding-top: 1px;
+        padding-left: 45px;
+    }
+
+    #main .up-container .global-warming .img-box .img-title{
+        position: absolute;
+        top: 40px;
+        left: 16px;
+        font-weight: bold;
+    }
+}
+
+@media(min-width: 1201px) and (max-width: 1400px){
+    #main .up-container .global-warming .img-box .img-title{
+        position: absolute;
+        top: 46px;
+        left: 27px;
+        font-weight: bold;
+    }
+}

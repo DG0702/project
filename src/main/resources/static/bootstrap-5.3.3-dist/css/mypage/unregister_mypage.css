@@ -1,0 +1,97 @@
+.container .content .content_header {
+    margin-top: 20px;
+}
+
+.container .content .content_header h2 {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue ;
+    font-weight: 700;
+}
+
+.container .content .content_header p {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.container .content .content_header p:nth-child(3){
+    color: red;
+}
+
+.container .content .section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.container .content .section .section_private{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+
+.container .content .section .section_private legend{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .id {
+    margin-top: 130px;
+}
+
+.container .content .section .section_private .id-message{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content .section .section_private .id .input-id{
+    width: 75%;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.container .content .section .section_private .pw{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .pw-message{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content .section .section_private .pw .input-pw{
+    width: 75%;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+
+.container .content .section .section_private .words{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .word-message{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content .section .section_private .words .input-words{
+    width: 75%;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.container .content .section .section_private .un-btn{
+    margin-top: 20px;
+}
+
+.container .content .section .section_private .un-btn .btn{
+    width: 70%;
+}
+
+
+

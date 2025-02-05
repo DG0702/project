@@ -1,0 +1,67 @@
+html, body{
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.header .nav .navbar-brand{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.header .under-nav .nav .nav-item{
+    height: 40px;
+    line-height: 35px;
+}
+.header .under-nav .nav .nav-link{
+    height: 40px;
+    line-height: 35px;
+}
+
+    /*.header .under-nav{*/
+/*    height: 40px;*/
+/*}*/
+
+
+.footer .container {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+
+
+.footer .container .content .info-a {
+    padding-top: 10px;
+    height: 35px;
+}
+
+
+
+.footer .container .content .icon{
+    font-size: 30px;
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+}
+
+.footer .container .content .ver{
+    display: inline-block;
+    color: white;
+}
+
+/* 푸터 아이콘에 마우스 올리면 색상 변경 */
+.footer .container .content .icon i:hover {
+    color: #0d6efd;
+}
+
+@media (max-width: 540px) {
+    html, body {
+        min-width: 540px; /* 작은 화면에서 강제로 540px 이하로 줄어들지 않도록 설정 */
+    }
+}

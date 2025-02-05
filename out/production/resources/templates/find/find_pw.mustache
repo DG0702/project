@@ -1,0 +1,56 @@
+{{>layouts/findheader}}
+<div class="container">
+    <div class="content">
+        <div class="content_header">
+            <h2>비밀번호 찾기</h2>
+            <p>
+                회원 정보에 등록한 이름과 같아야 합니다
+            </p>
+        </div>
+
+        <div class="section">
+            <form action="/find-pw" method="post" id="findPwForm">
+                <fieldset>
+                    <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <legend>< 회원 정보 조회 > </legend>
+                        <div class="name">
+                            <input type="text" id="name" class="input input-name" name="userName" value title="이름" placeholder="이름 : ">
+                        </div>
+
+                        <!--오류메시지-->
+                        <div id="name-message"></div>
+
+                        <div class="id">
+                            <input type="text" id="id" class="input input-id" name="userId" value title="아이디" placeholder="아이디 : ">
+                        </div>
+
+                        <!--오류메시지-->
+                        <div id="id-message"></div>
+
+                        <div class="search_btn">
+                            <button type="submit" class="btn btn-outline-primary">조회</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="pwModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="font-weight: 700;" class="modal-title fs-5" id="pwModalLabel">비밀번호 찾기 결과</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{>layouts/findfooter}}

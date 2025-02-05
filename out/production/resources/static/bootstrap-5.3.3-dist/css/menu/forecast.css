@@ -1,0 +1,55 @@
+.main .container .forecast_explain {
+    background-color: ghostwhite;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.main .container .forecast_explain .explain_title h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    color: indianred;
+}
+
+.main .container .forecast_explain .explain_mean{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main .container .forecast_explain .explain_mean .mean_title{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.main .container .forecast_explain .forecast .forecast_title .text_point{
+    background-color: khaki;
+    width: 100px;
+}
+
+.main .container .forecast_explain .explain_mean .mean_title .text_color{
+    color: red;
+}
+
+
+.main .container .forecast_explain .forecast .forecast_title{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.main .container .forecast_explain .forecast .forecast_reason{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.main .container .forecast_explain .section .section_img{
+    margin: 0 auto;
+    width: 550px;
+    height: 400px;
+    display: inline-block;
+}

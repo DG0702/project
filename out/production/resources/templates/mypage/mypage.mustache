@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>마이페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/bootstrap-5.3.3-dist/css/mypage/mypage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="header">
+        <nav class="nav bg-success p-2 text-dark bg-opacity-10">
+            <div class="container-fluid top-nav">
+                <a href="/login-after" methods="#" class="navbar-brand">
+                    <h1 class="title">Global Warming Board</h1>
+                </a>
+            </div>
+        </nav>
+        <div class="under-nav bg-success bg-gradient">
+            <ul class="nav justify-content-left">
+                <li class="nav-item">
+                    <a class="text-decoration-none text-white page_name" href="/users/mypage">마이 페이지</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <div class="update-box">
+                <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="small-title">커뮤니티 설정</div>
+                        <div class="community">
+                            <ul class="nav flex-column">
+                                <li class="nav-item profile">
+                                    <a class="nav-link disabled">프로필</a>
+                                </li>
+                                <li class="nav-item edit">
+                                    <a class="nav-link" href="/users/edit">회원정보 수정</a>
+                                </li>
+                                <li class="nav-item unregister">
+                                    <a class="nav-link" href="/users/unregister">회원탈퇴</a>
+                                </li>
+                                <li class="nav-item activity">
+                                    <a class="nav-link disabled">활동내역</a>
+                                </li>
+
+                                <li class="nav-item write-board">
+                                    <a class="nav-link" href="/users/posts">내가 쓴 게시물</a>
+                                </li>
+
+                                <li class="nav-item write-reply">
+                                    <a class="nav-link" href="/users/comments">내가 쓴 댓글</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+</html>

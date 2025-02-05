@@ -1,0 +1,23 @@
+html, body{
+    min-width: 600px;  /* 최소 너비 600px 설정 */
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header .nav .navbar-brand{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.header .under-nav .nav .nav-item{
+    height: 40px;
+    line-height: 35px;
+}
+.header .under-nav .nav .nav-link{
+    height: 40px;
+    line-height: 35px;
+}

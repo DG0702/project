@@ -1,0 +1,51 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.3'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.project'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Mustache 템플릿 엔진을 사용하는 경우
+	implementation 'org.springframework.boot:spring-boot-starter-mustache'
+	// 웹 어플리케이션을 위한 기본 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// 롬북
+	implementation 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	// 데이터베이스 연동이 필요한 경우
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	testImplementation 'org.springframework.security:spring-security-test'
+	annotationProcessor'org.projectlombok:lombok'
+	// 서버 자동 재시작 설정
+//	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Spring Security 의존성 추가
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+
+
+
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

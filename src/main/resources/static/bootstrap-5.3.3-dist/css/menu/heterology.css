@@ -1,0 +1,71 @@
+.main .container .heterology_explain {
+    background-color: ghostwhite;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.main .container .heterology_explain .explain_title h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    color: indianred;
+}
+
+.main .container .heterology_explain .section{
+    margin: 0 auto;
+}
+
+.main .container .heterology_explain .section .section_add {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.main .container .heterology_explain .section .section_explain{
+    margin-bottom: 20px;
+}
+
+.main .container .heterology_explain .section .section_img{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+}
+
+
+.main .container .heterology_explain .article .article_text{
+    color: #03c75a;
+}
+
+.main .container .heterology_explain .article .article-img{
+    margin: 0 auto;
+    width: 550px;
+    display: inline-block;
+}
+
+
+
+.main .container .heterology_explain .section .section_title .section_definition .text_point{
+    background-color: khaki;
+    width: 100px;
+}
+
+.main .container .heterology_explain .example{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.main .container .heterology_explain .example .example_example .text_color{
+    color: red;
+    font-weight: 700;
+}
+
+.main .container .heterology_explain .main-img{
+    margin: 0 auto;
+    width: 700px;
+    height: 650px;
+}

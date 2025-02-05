@@ -1,0 +1,39 @@
+
+.comment .container .content-header h3 {
+    font-style: oblique;
+    font-weight: 700;
+    color: slategrey;
+}
+
+.comment .container .content-header p {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.comment .container .content-header p:nth-child(3){
+    color: red;
+}
+
+
+.comment .container .write-btn{
+    display: flex;
+    justify-content: end;
+}
+
+
+.comment .container .list-search .input_search{
+    display: flex;
+    justify-content: center;
+    line-height: 55px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+}
+.pagination .page-item .page-link {
+    color: #007bff;
+}
+

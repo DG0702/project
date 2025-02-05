@@ -1,0 +1,69 @@
+.main .container .explain {
+    background-color: ghostwhite;
+    text-align: center;
+
+}
+
+
+.main .container .explain .explain_title h1{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    color: cornflowerblue;
+}
+
+
+.main .container .section .content_content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main .container .section .btn-set{
+    display: flex;
+    justify-content: center;
+}
+
+.main .container .section .btn-set .btn-file{
+    margin-right: 10px;
+}
+
+.main .container .section .btn-set .btn-edit .edit{
+    color: darkgray;
+}
+
+
+.footer .container {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.footer .container  {
+    text-align: center;
+}
+
+.footer .container .content .info-a {
+    padding-top: 10px;
+    height: 35px;
+}
+
+.footer .container .content .info-b {
+}
+
+.footer .container .content .icon{
+    font-size: 30px;
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+}
+
+.footer .container .content .ver{
+    display: inline-block;
+    color: white;
+}
+
+
+
+
+

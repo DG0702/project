@@ -1,0 +1,109 @@
+.header .nav .navbar-brand{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: springgreen;
+}
+
+.header .under-nav{
+    height: 60px;
+}
+
+.header .under-nav .nav {
+    margin-left: 30px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.main .container .content-header h3 {
+    font-style: oblique;
+    font-weight: 700;
+    color: slategrey;
+}
+
+.main .container .content-header p {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.main .container .content-header p:nth-child(3){
+    color: red;
+}
+
+.main .container .section .section_private .content_content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main .container .section .section_private .btn-set{
+    display: flex;
+    justify-content: center;
+}
+
+.main .container .section .section_private .btn-set .btn-file{
+    margin-right: 10px;
+}
+
+.main .container .section .section_private .btn-set .set{
+    color: darkgray;
+}
+
+
+.main .container .section .section_private .btn-edit button:nth-child(1){
+    margin-right: 5px;
+}
+
+.main .container .section .section_private .fileInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .section .section_private .fileInfo p:nth-child(1){
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.main .container .section .section_private .fileInfo p:nth-child(2){
+    color: black;
+    font-weight: bold;
+}
+
+.footer .container {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.footer .container  {
+    text-align: center;
+}
+
+.footer .container .content .info-a {
+    padding-top: 10px;
+    height: 35px;
+}
+
+.footer .container .content .info-b {
+}
+
+.footer .container .content .icon{
+    font-size: 30px;
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+}
+
+.footer .container .content .ver{
+    display: inline-block;
+    color: white;
+}
+
+
+
