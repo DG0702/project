@@ -343,7 +343,19 @@ public class BoardService {
                 likesRepository.deleteByBoardId(boardId);
                 
                 // 3. 첨부파일 삭제
-                attachedFileRepository.deleteByBoardId(boardId);
+
+                // 게시물에 첨부된 파일 조회
+                List<AttachedFile> files =attachedFileRepository.findByBoardId(boardId);
+
+                // 파일 삭제 처리
+                for (AttachedFile file : files){
+                    // 서버에서 파일 삭제
+                    fileService.deleteAllFiles(file);
+
+                    // 데이터베이스에서 삭제
+                    attachedFileRepository.delete(file);
+                }
+
 
                 // 게시물 삭제
                 boardRepository.deleteById(boardId);
@@ -382,7 +394,16 @@ public class BoardService {
             likesRepository.deleteByBoardId(boardId);
 
             // 3. 첨부파일 삭제
-            attachedFileRepository.deleteByBoardId(boardId);
+            List<AttachedFile> files =attachedFileRepository.findByBoardId(boardId);
+
+            // 파일 삭제 처리
+            for (AttachedFile file : files){
+                // 서버에서 파일 삭제
+                fileService.deleteAllFiles(file);
+
+                // 데이터베이스에서 삭제
+                attachedFileRepository.delete(file);
+            }
 
             // 게시물 삭제
             boardRepository.deleteById(boardId);

@@ -324,7 +324,7 @@ public class FileService {
     }
 
 
-    // 게시물 수정 시 첨부파일 모두삭제
+    // 게시물에 존재하는 첨부파일 모두삭제
     public void deleteAllFiles (AttachedFile attachedFile){
         try {
             // 저장 경로
@@ -417,7 +417,6 @@ public class FileService {
     @Transactional
     public void deleteMenuFiles(MenuCategory existingMenuId) throws IOException{
 
-        System.out.println("delete 실행");
         // 메뉴 아이디에 기존 첨부파일이 존재할 경우
         for(AttachedFile attachedFile : existingMenuId.getAttachedFileList()){
             try {
