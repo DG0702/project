@@ -5,484 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62e829a-0a12-4443-8300-38cd992bfffe" name="변경" comment="프로젝트 등록">
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.10.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news/1738250508287industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Mystream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/Parser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/ProjectApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/api/RestApiController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/api/RestApiFirstController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/config/WebConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/ArticleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/BoardController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/BoardRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/CommentRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/FileRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/LikesRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/ManagerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/ManagerRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/MemberController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/MemberRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/MypageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/MypageRestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/RedirectAttrController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/controller/layoutController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/ArticleForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/AttachedFileDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/BoardWithInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/CommentDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/CommentWithInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/CommentWithTitle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/LikesDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/MemberDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/MenuCategoryDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/PostsDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/dto/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/AttachedFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/BlackPink.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Board.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Comment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Likes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/MenuCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/UserRole$UserRoleBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/entity/UserRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/lombok/Lombok.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/ArticleRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/AttachedFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/BlackPinkRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/BoardRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/CommentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/LikesRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/MemberRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/MenuCategoryRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/RoleRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/repository/UserRoleRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/ArticleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/BoardService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/CommentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/FileService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/LikesService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/MemberService$MemberServiceBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/MemberService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/project/project/service/MenuCategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/board/board.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/board/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/board/post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/board/post_write.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/find/find_id.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/find/find_pw.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/header/boardheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/header/findheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/header/menuheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/header/mypageheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/login/join.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/login/login_after.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/edit_news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/forecast.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/heterology.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/meaning.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/menu/solution_plan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/my_comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/my_post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/mypage/unregister_mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/viewlayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/banner/beach.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/banner/glacier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/banner/landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/forecast/earth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/forecast/economy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/forecast/kor-eco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/forecast/kor-fu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/acid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/gas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/global-case.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/ocean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/sea_temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/surface_height.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/heletology/warming_gas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/5929693.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/forecast.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/grobal_warming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/heterology.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/news.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/home/solution.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/meaning/cause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/meaning/earth_system.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/meaning/global-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/meaning/global-warming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/meaning/greenhouse-gas-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/news/industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/solution/always.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/solution/inter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/img/solution/temper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/comment_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/find.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/like.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/post_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/board/viewCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/find/findId.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/find/findPw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/join/join.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/login/login_after.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/menu/edit_news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/checkBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/comment_delete_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_comment_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_post_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/post_delete_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/saveInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/js/mypage/unregister.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/articles/edit.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/articles/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/articles/new.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/articles/show.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/board.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/board_search.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/comment_search.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/board/post_write.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/find/find_id.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/find/find_pw.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/home/home.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/after_menufooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/after_menuheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/boardfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/boardheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/findfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/findheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/homefooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/homeheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/loginfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/loginheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/menufooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/menuheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/mypagefooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/mypageheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/layouts/terms_personal_Info.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/login/join.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/login/login.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/login/login_after.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/after_forecast.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/after_heterology.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/after_meaning.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/after_news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/after_solution_plan.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/edit_news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/forecast.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/heterology.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/meaning.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/menu/solution_plan.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mustache/object.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mustache/registerForm.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/edit_comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/edit_mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/edit_post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/my_comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/my_post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/mypage/unregister_mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/blackpink.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/result.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/success.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/upEx.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/urlQuery.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/test/viewlayout.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/project/project/ProjectApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/ProjectApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/api/RestApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/api/RestApiFirstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/BoardRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/CommentRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/FileRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/LikesRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/ManagerRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/AttachedFileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/BoardWithInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/CommentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/CommentWithInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/CommentWithTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/LikesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/MemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/MenuCategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/PostsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/AttachedFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Likes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/MenuCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/AttachedFileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/LikesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/MenuCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/LikesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/MenuCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/board/board.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/board/comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/board/post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/board/post_write.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/find/find_id.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/find/find_pw.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/header/boardheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/header/findheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/header/menuheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/header/mypageheader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/login/join.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/login/login_after.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/edit_news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/forecast.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/heterology.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/meaning.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/news.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/menu/solution_plan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/edit_post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/my_comment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/my_post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/css/mypage/unregister_mypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/banner/beach.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/banner/glacier.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/banner/landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/forecast/earth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/forecast/economy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/forecast/kor-eco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/forecast/kor-fu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/acid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/gas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/global-case.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/ocean.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/sea_temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/surface_height.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/heletology/warming_gas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/forecast.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/grobal_warming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/heterology.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/news.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/home/solution.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/meaning/cause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/meaning/earth_system.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/meaning/global-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/meaning/global-warming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/meaning/greenhouse-gas-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/news/industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/solution/always.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/solution/inter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/img/solution/temper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/comment_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/find.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/like.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/post_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/board/viewCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findId.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findPw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/join/join.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/login/login_after.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/menu/edit_news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/checkBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/comment_delete_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_comment_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit_post_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/post_delete_btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/saveInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/unregister.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/board.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/board_search.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/comment_search.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board/post_write.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/find/find_id.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/find/find_pw.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home/home.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/after_menufooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/after_menuheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/boardfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/boardheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/findfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/findheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/homefooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/homeheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/loginfooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/loginheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/menufooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/menuheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/mypagefooter.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/mypageheader.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/terms_personal_Info.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login/join.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login_after.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/after_forecast.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/after_heterology.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/after_meaning.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/after_news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/after_solution_plan.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/edit_news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/forecast.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/heterology.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/meaning.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/news.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/menu/solution_plan.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_comment.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_post.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/unregister_mypage.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/project/project/ProjectApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736141763987industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736226488939industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736226828903industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736318400710test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736318758549test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736318786217test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736730861547test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736831294755test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736831294755test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736831294755test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736832917252test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736832917252test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736832917269test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736834617586test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736834617608test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736834617610test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736834837907test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736834837908test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736835207244test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736835207268test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736836592979test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736836593002test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736842090486test1.mp4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736842090503test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736842090503test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736843867884test2.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736843867884test3.txt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736904177707test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736904177711test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736905030206test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736905030235test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736905030235test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1736906496136test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737003118379test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737003118386test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737199449413test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737199449426test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737199449430test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737341436374test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737341436441test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737341436451test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737341457969test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737341457976test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737355813972test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737355814003test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737355814003test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737529672612test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737529672657test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594722224test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594722224test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594722224test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594945418test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594945433test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737594945435test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737605744262test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737605744277test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608579270test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608579288test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608579288test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608756051test1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608756052test2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1737608756067test3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1738291767267industrialization-temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/1738292772365industrialization-temp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/project/project/api/RestApiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/project/project/api/RestApiFirstController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/bootstrap-5.3.3-dist/css/viewlayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/articles/edit.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/articles/index.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/articles/new.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/articles/show.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/layouts/footer.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/layouts/header.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/mustache/object.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/mustache/registerForm.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/blackpink.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/result.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/success.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/upEx.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/urlQuery.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/test/viewlayout.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/api/RestApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/api/RestApiFirstController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MemberRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/controller/MypageRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/repository/AttachedFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/AttachedFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/repository/UserRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/repository/UserRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/project/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/project/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findPw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/find/findPw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/join/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/join/join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/unregister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap-5.3.3-dist/js/mypage/unregister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/find/find_pw.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/find/find_pw.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/home.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/home.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layouts/mypageheader.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/mypageheader.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/join.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/join.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/login_after.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/login_after.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_mypage.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_mypage.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/edit_post.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_comment.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_comment.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_post.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/mypage.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/mypage.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -557,34 +130,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Gradle.project [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.project 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LombokTests.testGetter.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/project&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.Mystream.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TQQQ.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.project [clean].executor": "Run",
+    "Gradle.project 빌드.executor": "Run",
+    "JUnit.LombokTests.testGetter.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.Mystream.executor": "Run",
+    "애플리케이션.TQQQ.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\project\src\main\resources\templates\layouts" />
@@ -843,6 +416,7 @@
       <workItem from="1738744082007" duration="1689000" />
       <workItem from="1738751044666" duration="572000" />
       <workItem from="1738751629955" duration="2381000" />
+      <workItem from="1739432453074" duration="9283000" />
     </task>
     <servers />
   </component>

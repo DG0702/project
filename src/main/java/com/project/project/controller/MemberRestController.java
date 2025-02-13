@@ -21,7 +21,7 @@ public class MemberRestController {
     private MemberService memberService;
 
     // 아이디 중복검사
-    @GetMapping("/id-check-duplicate")
+    @GetMapping("/users/check-id")
     // @RequestParam에서 name 사용시 fetch메서드에 url에 쿼리 매개변수와 이름이 같아야한다 !!
     public Map<String, Boolean>IDcheckDuplication(@RequestParam(name="user_id") String userId){
         boolean isDuplicate = memberService.IDcheck(userId);
@@ -31,7 +31,7 @@ public class MemberRestController {
     }
 
     // 전화번호 중복검사
-    @GetMapping("/Phone-check-duplicate")
+    @GetMapping("/users/check-phone")
     // @RequestParam에서 name 사용시 fetch메서드에 url에 쿼리 매개변수와 이름이 같아야한다 !!
     public Map<String,Boolean> PhonecheckDuplicateion(@RequestParam(name = "phone_number") String phoneNumber){
         boolean isDuplicate = memberService.Phonecheck(phoneNumber);
@@ -41,7 +41,7 @@ public class MemberRestController {
     }
     
     // 닉네임 중복검사
-    @GetMapping("/nick-check-duplicate")
+    @GetMapping("/users/check-nickname")
     public Map<String,Boolean> NickcheckDuplication(@RequestParam (name="nick_name") String nickName){
         boolean isDuplicate = memberService.Nickcheck(nickName);
         Map<String,Boolean> response = new HashMap<>();
@@ -51,7 +51,7 @@ public class MemberRestController {
 
 
     // 아이디 찾기 조회
-    @PostMapping("/find-id")
+    @PostMapping("/users/find-id")
     // ResponseEntity<Map<String,Object>> 사용 이유 : 응답 본문에 다양한 값을 넣기 위해
     // @RequestBody을 이용해 요청 본문에 값을 가지고 옴
     public ResponseEntity<Map<String,Object>> findId(@RequestBody Map<String,String> data){
@@ -83,7 +83,7 @@ public class MemberRestController {
 
 
     // 비밀번호 찾기 조회
-    @PostMapping("/find-pw")
+    @PostMapping("/users/find-pw")
     public ResponseEntity<Map<String,Object>> findPw(@RequestBody Map<String,String> data){
 
         // 요청 본문 값 반환

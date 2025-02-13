@@ -57,7 +57,7 @@ document.querySelector("#findIdForm").addEventListener("submit", function (e){
     if (isValue) {
         try {
             // 비동기 실행
-            fetch("/find-id", {
+            fetch("/users/find-id", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

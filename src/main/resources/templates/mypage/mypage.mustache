@@ -14,7 +14,7 @@
     <div class="header">
         <nav class="nav bg-success p-2 text-dark bg-opacity-10">
             <div class="container-fluid top-nav">
-                <a href="/login-after" methods="#" class="navbar-brand">
+                <a href="/login-after" class="navbar-brand">
                     <h1 class="title">Global Warming Board</h1>
                 </a>
             </div>
@@ -33,30 +33,30 @@
             <div class="update-box">
                 <div class="section_private shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="small-title">커뮤니티 설정</div>
-                        <div class="community">
-                            <ul class="nav flex-column">
-                                <li class="nav-item profile">
-                                    <a class="nav-link disabled">프로필</a>
-                                </li>
-                                <li class="nav-item edit">
-                                    <a class="nav-link" href="/users/edit">회원정보 수정</a>
-                                </li>
-                                <li class="nav-item unregister">
-                                    <a class="nav-link" href="/users/unregister">회원탈퇴</a>
-                                </li>
-                                <li class="nav-item activity">
-                                    <a class="nav-link disabled">활동내역</a>
-                                </li>
+                    <div class="community">
+                        <ul class="nav flex-column">
+                            <li class="nav-item profile">
+                                <a class="nav-link disabled">프로필</a>
+                            </li>
+                            <li class="nav-item edit">
+                                <a class="nav-link" href="/users/modification">회원정보 수정</a>
+                            </li>
+                            <li class="nav-item unregister">
+                                <a class="nav-link" href="/users/unregistration">회원탈퇴</a>
+                            </li>
+                            <li class="nav-item activity">
+                                <a class="nav-link disabled">활동내역</a>
+                            </li>
 
-                                <li class="nav-item write-board">
-                                    <a class="nav-link" href="/users/posts">내가 쓴 게시물</a>
-                                </li>
+                            <li class="nav-item write-board">
+                                <a class="nav-link" href="/users/{{userId}}/posts">내가 쓴 게시물</a>
+                            </li>
 
-                                <li class="nav-item write-reply">
-                                    <a class="nav-link" href="/users/comments">내가 쓴 댓글</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <li class="nav-item write-reply">
+                                <a class="nav-link" href="/users/{{userId}}/comments">내가 쓴 댓글</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

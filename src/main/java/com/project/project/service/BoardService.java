@@ -121,7 +121,7 @@ public class BoardService {
         }
 
         // 수정 권한 체크
-        if(!existingBoard.getUserNo().equals(member.getUser_no())){
+        if(!existingBoard.getUserNo().equals(member.getUserNo())){
             throw new RuntimeException("본인 게시물만 수정 할 수 있습니다");
         }
 
@@ -330,7 +330,7 @@ public class BoardService {
                     throw new IllegalArgumentException("게시물을 찾을 수 없습니다");
                 }
 
-                if(!board.getUserNo().equals(member.getUser_no())){
+                if(!board.getUserNo().equals(member.getUserNo())){
                     throw new RuntimeException("본인 게시물만 삭제 할 수 있습니다");
                 }
 

@@ -36,7 +36,7 @@ async function checkIdValidation() {
         // (Get,Post 등) Mapping 할 경우 url : "/id-check-duplicate"
         // 쿼리 파라미터 :  + encodeURIComponent(userId)
         // @RequestParam 사용
-        const response = await fetch("/id-check-duplicate?user_id=" + encodeURIComponent(userId), {
+        const response = await fetch("/users/check-id?user_id=" + encodeURIComponent(userId), {
             method: "GET"
         })
         if (!response.ok) {
@@ -143,7 +143,7 @@ async function checkPhoneValidation() {
 
     // 중복확인 
     try {
-        const response = await fetch("/Phone-check-duplicate?phone_number=" + encodeURIComponent(Phone), {
+        const response = await fetch("/users/check-phone?phone_number=" + encodeURIComponent(Phone), {
             method: "GET"
         })
         if (!response.ok) {
@@ -196,7 +196,7 @@ async function checkNicknameValidation(){
     
     // 중복 확인
     try {
-        const response =await fetch("/nick-check-duplicate?nick_name=" + encodeURIComponent(nickName), {
+        const response =await fetch("/users/check-nickname?nick_name=" + encodeURIComponent(nickName), {
             method: "GET"
         })
         if(!response.ok){

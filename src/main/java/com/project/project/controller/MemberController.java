@@ -58,7 +58,7 @@ public class MemberController {
             return "redirect:/login-page";
         }
 
-        Long userId = member.getUser_no();
+        Long userId = member.getUserNo();
 
         // 로그인한 아이디가 1일때만
         model.addAttribute("isAdmin",userId ==1);
@@ -67,41 +67,39 @@ public class MemberController {
     }
 
     // 로그아웃
-    @GetMapping("/logout")
+    @PostMapping("/logout")
     public String logout(HttpSession session){
         // 세션 종료하고 세션에 저장된 모든 데이터 삭제 (세션 초기화)
         session.invalidate();
-        return "/home/home";
+        return "redirect:/";
     }
 
 
 
 
     // 아이디 찾기 이동
-    @GetMapping("/find-id")
+    @GetMapping("/users/find-id")
     public String findId(){
         return "/find/find_id";
     }
 
-
-
     // 비밀번호 찾기 이동
-    @GetMapping("/find-pw")
+    @GetMapping("/users/find-pw")
     public String findPw(){
         return "/find/find_pw";
     }
 
     // 회원가입 이동
-    @GetMapping("/users/join")
+    @GetMapping("/users/membership")
     public String join(){
         return "/login/join";
     }
 
     // 회원가입
-    @PostMapping("/users/join")
+    @PostMapping("/users/membership")
     public String processJoin(MemberDTO memberData){
         Member saved = memberService.join(memberData);
 //        log.info(saved.toString());
-        return "/home/home";
+        return "redirect:/";
     }
 }

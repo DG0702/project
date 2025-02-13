@@ -48,7 +48,7 @@ public class BoardController {
         Member member = (Member) session.getAttribute("member");
 
         // 관리자
-        Long userId = member.getUser_no();
+        Long userId = member.getUserNo();
 
         // Page<Board>는 페이징된 결과를 의미 
         
@@ -176,7 +176,7 @@ public class BoardController {
         }
 
         // userNo, nickName, 사용자 아이디(uploadId) 설정
-        Long userNo = member.getUser_no();
+        Long userNo = member.getUserNo();
         String userNickname = member.getNickName();
 
 
@@ -278,7 +278,7 @@ public class BoardController {
         // 세션 정보를 가지고 오면
         if(member != null){
             // userNo는 board 테이블에 담기지 않기 때문에 수동으로 설정
-            model.addAttribute("userNo",member.getUser_no());
+            model.addAttribute("userNo",member.getUserNo());
             // 닉네임 가져오기
             model.addAttribute("userNickName",member.getNickName());
         }

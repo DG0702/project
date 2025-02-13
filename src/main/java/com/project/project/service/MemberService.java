@@ -104,6 +104,10 @@ public class MemberService {
         return memberRepository.save(member);
     }
 
+
+
+
+
     // 회원 삭제 시 데이터베이스에서 트리거를 이용
     // 회원과 연관된 게시물,댓글,첨부파일 삭제을 트랜잭션으로 관리
     @Transactional
@@ -117,6 +121,7 @@ public class MemberService {
        // 회원이 존재하는 경우
        if(member.isPresent()){
            // 값을 삭제
+           userRoleRepository.deleteByMember_UserNo(member.get().getUserNo());
            memberRepository.delete(member.get());
            return true;
        }else{

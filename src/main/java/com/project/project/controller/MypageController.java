@@ -40,25 +40,25 @@ public class MypageController {
     private FileService fileService;
 
     // 회원 정보 수정 이동
-    @GetMapping("/users/edit")
+    @GetMapping("/users/modification")
     public String edit(){
         return "/mypage/edit_mypage";
     }
 
     // 회원 탈퇴 이동
-    @GetMapping("/users/unregister")
+    @GetMapping("/users/unregistration")
     public String unregister(){
         return "/mypage/unregister_mypage";
     }
 
     // 내가 쓴 게시물 이동
-    @GetMapping("/users/posts")
+    @GetMapping("/users/{userId}/posts")
     public String posts(@RequestParam (defaultValue = "1") int page, Model model, HttpSession session){
 
         // 회원 정보 가져오기
         Member member = (Member) session.getAttribute("member");
 
-        Long userNo = member.getUser_no();
+        Long userNo = member.getUserNo();
 
         // 페이징된 결과
 
@@ -142,13 +142,13 @@ public class MypageController {
 
 
     // 내가 쓴 댓글 이동
-    @GetMapping("/users/comments")
+    @GetMapping("/users/{userId}/comments")
     public String comments(@RequestParam (defaultValue = "1")int page, Model model, HttpSession session){
 
         // 회원 정보 가져오기
         Member member = (Member) session.getAttribute("member");
 
-        Long userNo = member.getUser_no();
+        Long userNo = member.getUserNo();
 
         int size = 10;
 

@@ -98,7 +98,7 @@ public class CommentService {
             throw new IllegalArgumentException("댓글을 찾을 수 없습니다 ");
         }
         
-        if(!existingComment.getUserNo().equals(member.getUser_no())){
+        if(!existingComment.getUserNo().equals(member.getUserNo())){
             throw new RuntimeException("본인 댓글만 수정 할 수 있습니다");
         }
 
@@ -124,7 +124,7 @@ public class CommentService {
                     throw new IllegalArgumentException("댓글을 찾을 수 없습니다");
                 }
 
-                if(!existingComment.getUserNo().equals(member.getUser_no())){
+                if(!existingComment.getUserNo().equals(member.getUserNo())){
                   throw new RuntimeException("본인 댓글만 삭제 할 수 있습니다");
                 }
 

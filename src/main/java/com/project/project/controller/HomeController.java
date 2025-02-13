@@ -159,7 +159,7 @@ public class HomeController {
         }
 
         // 로그인 한 아이디 번호
-        Long userId = member.getUser_no();
+        Long userId = member.getUserNo();
         
         // 메뉴 아이디 
         Long menuId = 1L;
@@ -215,7 +215,18 @@ public class HomeController {
 
     // 로그인 후 Mypage 이동
     @GetMapping("/users/mypage")
-    public String mypage(){
+    public String mypage(HttpSession session,Model model){
+
+        // 회원정보 가져오기
+        Member member = (Member) session.getAttribute("member");
+
+        if (member == null){
+            return "redirect:/login-page";
+        }
+
+        Long userId = member.getUserNo();
+
+        model.addAttribute("userId", userId);
         return "/mypage/mypage";
     }
 

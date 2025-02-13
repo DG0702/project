@@ -31,7 +31,7 @@
                 </li>
                 <p class="nav-link text-decoration-none text-white">|</p>
                 <li class="nav-item">
-                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/edit">회원정보 수정</a>
+                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/modification">회원정보 수정</a>
                 </li>
                 <p class="nav-link text-decoration-none text-white">|</p>
                 <li class="nav-item">
@@ -39,15 +39,17 @@
                 </li>
                 <p class="nav-link text-decoration-none text-white">|</p>
                 <li class="nav-item">
-                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/posts">게시물 확인</a>
+                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/{userId}/posts">게시물 확인</a>
                 </li>
                 <p class="nav-link text-decoration-none text-white">|</p>
                 <li class="nav-item">
-                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/comments">댓글 확인</a>
+                    <a class="nav-link text-decoration-none text-white link-warning" href="/users/{userId}/comments">댓글 확인</a>
                 </li>
                 <p class="nav-link text-decoration-none text-white">|</p>
                 <li class="nav-item">
-                    <a class="nav-link text-decoration-none text-white link-warning" href="/home">로그아웃</a>
+                    <form action="/logout" method="post">
+                        <button class="nav-link text-decoration-none text-white link-warning">로그아웃</button>
+                    </form>
                 </li>
             </ul>
         </div>

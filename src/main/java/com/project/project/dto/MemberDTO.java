@@ -25,6 +25,8 @@ public class MemberDTO {
     private String grade;
 
     public Member toEntity(){
-        return new Member(user_no,userId,userName,password,phoneNumber,nickName,birthday,addr,gender,grade);
+        Member member = new Member(user_no,userId,userName,password,phoneNumber,nickName,birthday,addr,gender,grade);
+
+        return member;
     }
 }

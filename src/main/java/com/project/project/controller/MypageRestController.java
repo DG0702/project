@@ -3,6 +3,7 @@ package com.project.project.controller;
 import com.project.project.entity.Board;
 import com.project.project.entity.Member;
 import com.project.project.service.MemberService;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -84,23 +85,36 @@ public class MypageRestController {
 
     // 회원 전화번호 중복체크
     @GetMapping("/check-Phone-Duplicate")
-    public ResponseEntity<Map<String,Object>> checkPhoneDuplicate (@RequestParam (name = "phoneNumber") String phoneNumber){
-        // 전화번호 중복 체크
-        Boolean isDuplicate = memberService.Phonecheck(phoneNumber);
+    public ResponseEntity<Map<String,Object>> checkPhoneDuplicate (@RequestParam (name = "phoneNumber") String phoneNumber, HttpSession session){
+
+        Member member = (Member) session.getAttribute("member");
+
+        if(member == null){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
 
         // 응답할 데이터 생성
         Map<String,Object> response = new HashMap<>();
-        
-        // 전화번호가 중복일 경우
-        if(isDuplicate){
-            response.put("isDuplicate",isDuplicate);
+
+        String existingPhone = member.getPhoneNumber();
+
+        if(existingPhone.equals(phoneNumber)){
+            response.put("isDuplicate",false);
+            return ResponseEntity.ok(response);
+        }else{
+            // 전화번호 중복 체크
+            Boolean isDuplicate = memberService.Phonecheck(phoneNumber);
+            // 전화번호가 중복일 경우
+            if(isDuplicate){
+                response.put("isDuplicate",true);
+            }
+            return ResponseEntity.ok(response);
         }
-        return ResponseEntity.ok(response);
     }
 
 
     // 회원 정보 수정
-    @PutMapping("/users/edit")
+    @PutMapping("/users/{userId}")
     public ResponseEntity<Map<String,Object>> editUserInfo(@RequestBody Map<String,String> data){
 
         // 응답할 데이터
@@ -184,7 +198,7 @@ public class MypageRestController {
     }
 
     // 회원 탈퇴 체크
-    @PostMapping("/users/unregister/check")
+    @PostMapping("/users/unregistration")
     public ResponseEntity<Map<String,Object>> unregisterCheck(@RequestBody Map<String,String> data){
 
         // 요청본문으로 받은 데이터 반환하기
@@ -209,7 +223,7 @@ public class MypageRestController {
 
 
     // 회원 탈퇴
-    @DeleteMapping("/users/unregister/{userId}")
+    @DeleteMapping("/users/{userId}")
     public ResponseEntity<Map<String,Object>> unregister (@PathVariable String userId){
 
         // 회원 탈퇴 처리

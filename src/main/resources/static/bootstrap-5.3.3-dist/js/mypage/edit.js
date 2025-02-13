@@ -81,7 +81,7 @@ document.querySelector("#edit-form").addEventListener("submit",function (e) {
                         phone_message.style.color = "red"
                         return false;
                     } else {
-                        fetch("/users/edit", {
+                        fetch(`/users/${encodeURIComponent(userId)}`, {
                             method: "PUT",
                             headers: {
                                 "Content-Type": "application/json"

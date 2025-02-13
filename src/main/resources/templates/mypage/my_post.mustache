@@ -72,7 +72,7 @@
             <ul class="pagination justify-content-center">
                 {{#hasPrevious}}
                 <li class="page-item">
-                    <a class="page-link text-black" href="/users/posts?page={{previousPage}}" aria-label="Previous">
+                    <a class="page-link text-black" href="/users/{userId}/posts?page={{previousPage}}" aria-label="Previous">
                         <span aria-hidden="true">&lt;이전</span>
                     </a>
                 </li>
@@ -80,13 +80,13 @@
 
                 {{#pages}}
                 <li class="page-item">
-                    <a class="page-link text-black link-primary" href="/users/posts?page={{this}}">{{this}}</a>
+                    <a class="page-link text-black link-primary" href="/users/{userId}/posts?page={{this}}">{{this}}</a>
                 </li>
                 {{/pages}}
 
                 {{#hasNext}}
                 <li class="page-item">
-                    <a class="page-link text-black" href="/users/posts?page={{nextPage}}" aria-label="Next">
+                    <a class="page-link text-black" href="/users/{userId}/posts?page={{nextPage}}" aria-label="Next">
                         <span aria-hidden="true">다음&gt;</span>
                     </a>
                 </li>
