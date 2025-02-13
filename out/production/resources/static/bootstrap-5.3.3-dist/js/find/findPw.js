@@ -45,15 +45,15 @@ document.querySelector("#findPwForm").addEventListener("submit",function (e){
         isValue = false;
     }
     // 아이디(이메일) 형식
-    else if(!emailPattern.test(userId)){
-        message.textContent = "이메일 형식이 아닙니다! (도메인은 .com만 허용됩니다.)"
-        message.style.color = "red"
+    else if(!emailPattern.test(id)){
+        id_message.textContent = "이메일 형식이 아닙니다! (도메인은 .com만 허용됩니다.)"
+        id_message.style.color = "red"
         isValue = false;
     }
     // 아이디(이메일) 글자수 제한
-    else if(userId.length > 15){
-        message.textContent = "이메일은 최대 15자까지 입력 가능합니다"
-        message.style.color = "red"
+    else if(id.length > 15){
+        id_message.textContent = "이메일은 최대 15자까지 입력 가능합니다"
+        id_message.style.color = "red"
         isValue = false;
     }
 
@@ -61,7 +61,7 @@ document.querySelector("#findPwForm").addEventListener("submit",function (e){
     if (isValue) {
         try {
             // 비동기 실행
-            fetch("find-pw", {
+            fetch("/users/find-pw", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

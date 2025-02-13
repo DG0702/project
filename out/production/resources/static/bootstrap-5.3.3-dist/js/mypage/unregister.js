@@ -61,7 +61,7 @@ document.querySelector("#unregister-form").addEventListener("submit",function (e
         const isConfirm = confirm(" 회원을 탈퇴하시겠습니까? \n 회원 탈퇴 시 모든 게시물은 삭제됩니다!")
         if (isConfirm) {
             try {
-                fetch("/users/unregister/check",{
+                fetch("/users/unregistration",{
                     method : "POST",
                     headers : {
                         "Content-Type" : "application/json"
@@ -73,14 +73,14 @@ document.querySelector("#unregister-form").addEventListener("submit",function (e
                         if(data.success){
                             // url : `/users/unregister/${encodeURIComponent(userId)}`
                             // 따라서 @PathVariable 사용
-                            fetch(`/users/unregister/${encodeURIComponent(userId)}`, {
+                            fetch(`/users/${encodeURIComponent(userId)}`, {
                                 method: "DELETE"
                             })
                                 .then(response => response.json())
                                 .then(data => {
                                     if (data.success) {
                                         alert(data.message)
-                                        window.location.href = "/home"
+                                        window.location.href = "/"
                                     }else{
                                         alert(data.message)
                                     }
