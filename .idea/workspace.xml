@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f62e829a-0a12-4443-8300-38cd992bfffe" name="변경" comment="프로젝트 등록">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Parser.class" beforeDir="false" />
@@ -56,6 +57,21 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_comment.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_comment.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_post.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/my_post.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mypage/mypage.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mypage/mypage.mustache" afterDir="false" />
+=======
+    <list default="true" id="f62e829a-0a12-4443-8300-38cd992bfffe" name="변경" comment="로컬 영역 첨부파일 정리">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Mystream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" />
+>>>>>>> 33d63b29231d248a316febea131a93fcfcb6d1ca
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +120,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -114,7 +148,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/DG0702/Global-Warming-Board.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:DG0702/project.git&quot;,
     &quot;accountId&quot;: &quot;bfacf0f1-926c-4ac0-984b-bf355aea0d04&quot;
   }
 }</component>
@@ -130,6 +164,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
@@ -156,6 +191,35 @@
     "vue.rearranger.settings.migration": "true",
     "애플리케이션.Mystream.executor": "Run",
     "애플리케이션.TQQQ.executor": "Run"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.project [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.project 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LombokTests.testGetter.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjectApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/project/untitled/src/main/java/com/project/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Mystream.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.TQQQ.executor&quot;: &quot;Run&quot;
+>>>>>>> 33d63b29231d248a316febea131a93fcfcb6d1ca
   }
 }]]></component>
   <component name="RecentsManager">
@@ -227,6 +291,19 @@
       <option name="MAIN_CLASS_NAME" value="com.project.project.LombokTests" />
       <option name="METHOD_NAME" value="testGetter" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Global-Warming-Board" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Global-Warming-Board" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -415,9 +492,47 @@
       <workItem from="1738744010678" duration="65000" />
       <workItem from="1738744082007" duration="1689000" />
       <workItem from="1738751044666" duration="572000" />
+<<<<<<< HEAD
       <workItem from="1738751629955" duration="2381000" />
       <workItem from="1739432453074" duration="9283000" />
+=======
+      <workItem from="1738751629955" duration="7910000" />
+      <workItem from="1738906899030" duration="2152000" />
+      <workItem from="1738909109726" duration="1172000" />
+      <workItem from="1739333937914" duration="692000" />
+      <workItem from="1739431298620" duration="67000" />
+      <workItem from="1739431376778" duration="33000" />
+      <workItem from="1739431417430" duration="47000" />
+      <workItem from="1739431469574" duration="54000" />
+      <workItem from="1739431538458" duration="364000" />
+      <workItem from="1739447170054" duration="575000" />
+>>>>>>> 33d63b29231d248a316febea131a93fcfcb6d1ca
     </task>
+    <task id="LOCAL-00001" summary="프로젝트 등록">
+      <option name="closed" value="true" />
+      <created>1738754361922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738754361924</updated>
+    </task>
+    <task id="LOCAL-00002" summary="게시물 삭제 시 로컬 영역에 첨부 파일 삭제">
+      <option name="closed" value="true" />
+      <created>1738908906431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738908906431</updated>
+    </task>
+    <task id="LOCAL-00003" summary="로컬 영역 첨부파일 정리">
+      <option name="closed" value="true" />
+      <created>1738910130917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738910130917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +551,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로젝트 등록" />
-    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 등록" />
+    <MESSAGE value="게시물 삭제 시 로컬 영역에 첨부 파일 삭제" />
+    <MESSAGE value="로컬 영역 첨부파일 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="로컬 영역 첨부파일 정리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,6 +566,16 @@
           <url>file://$PROJECT_DIR$/build.gradle</url>
           <line>19</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Global-Warming-Board/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/java/com/project/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
