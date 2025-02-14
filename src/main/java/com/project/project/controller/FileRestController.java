@@ -17,7 +17,7 @@ public class FileRestController {
     @Autowired
     private FileService fileService;
 
-    // 게시물 파일 제공 API
+    // 게시물 파일 제공 API --> 사실상 경로
     @GetMapping("/uploads/{filename}")
     public ResponseEntity<Resource> upload(@PathVariable String filename) {
 
