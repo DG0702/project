@@ -66,13 +66,13 @@ html, body {
     }
 }
 
+
 /* 푸터 스타일 */
 .footer {
-    background-color: #212121;
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer .container .content .info-a {

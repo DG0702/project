@@ -1,4 +1,8 @@
 
+.board_main{
+    height: 737px;
+}
+
 .board_main .container .content-header h3 {
     font-style: oblique;
     font-weight: 700;

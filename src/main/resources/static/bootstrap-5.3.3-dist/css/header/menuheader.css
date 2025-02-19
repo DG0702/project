@@ -18,14 +18,15 @@ html, body{
     height: 40px;
     line-height: 35px;
 }
+
 .header .under-nav .nav .nav-link{
     height: 40px;
     line-height: 35px;
 }
 
-    /*.header .under-nav{*/
-/*    height: 40px;*/
-/*}*/
+.footer {
+    margin-bottom: 10px;
+}
 
 
 .footer .container {
