@@ -5,8 +5,6 @@
 
 
 #main .up-container .global-warming .img-box{
-    /*width: 580px;*/
-    /*height: 500px;*/
     position: relative;
     padding-top: 86.21%;
     overflow: hidden;
@@ -76,7 +74,10 @@
     margin-top: 70px;
 }
 
-#main .up-container .board .board-box #board-post{
+
+
+/*일반 유저 로그인 시*/
+#main .up-container .board .board-box .board-button{
     position: absolute;
     width: 400px;
     height: 100px;
@@ -87,8 +88,21 @@
     margin-top: 25px;
 }
 
-#main .up-container .board .board-box #board-comment{
-    display: none;
+
+
+/*관리자 계정 로그인 시 */
+#main .up-container .board .board-box #board-post{
+    width: 200px;
+    height: 100px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+#main .up-container .board .comment-box #board-comment{
     width: 200px;
     height: 100px;
     background-color: lightskyblue;
@@ -175,14 +189,25 @@
 
     }
 
-    #main .up-container .board .board-box #board-post{
+    /*일반 유저 로그인 시 */
+    #main .up-container .board .board-box .board-button{
         width: 200px;
+        height: 50px;
+    }
+
+    /*관리자용 계정 로그인 시*/
+    #main .up-container .board .board-box #board-post{
+        width: 100px;
+        height: 50px;
+    }
+    #main .up-container .board .comment-box #board-comment{
+        width: 100px;
         height: 50px;
     }
 
 }
 
-/* 992px 이상, 1200px 이하 (992px부터 시작해서 1200px까지) */
+/* 992px 이상, 1200px 미만 (992px부터 시작해서 1199px까지) */
 @media(min-width: 992px) and (max-width: 1200px){
     #main .up-container .up-right{
         padding-top: 1px;
