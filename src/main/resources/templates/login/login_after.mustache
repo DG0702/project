@@ -23,30 +23,44 @@
                             <form action="/logout" method="POST">
                                 <button class="logout-button text-white">로그아웃</button>
                             </form>
-
                         </div>
+
                         <div class="mypage-box">
                             <a href="users/mypage" class="text-decoration-none">
                                 <button class="mypage-button text-white">마이페이지</button>
                             </a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-12">
-                        <div class="board" data-is-admin = {{isAdmin}}>
-                            <div class="board-box">
-                                <a href="/board" class="text-decoration-none">
-                                    <button id="board-post" class="board-button text-white">지구온난화 자유게시판</button>
-                                </a>
-                                {{#isAdmin}}
-                                    <a href="/comment" class="text-decoration-none">
-                                        <button id="board-comment" class="board-button text-white">게시판 댓글</button>
-                                    </a>
-                                {{/isAdmin}}
-                            </div>
+                <div id="user" class="col-12">
+                    <div class="board">
+                        <div class="board-box">
+                            <a href="/board" class="text-decoration-none">
+                                <button class="board-button text-white">지구온난화 자유게시판</button>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+
+
+                <div id="admin" class="col0-12 col-md-6" style="display: none" data-is-admin = {{isAdmin}}>
+                    <div class="board">
+                        <div class="board-box">
+                            <a href="/board" class="text-decoration-none">
+                                <button id="board-post" class="text-white">지구온난화 자유게시판</button>
+                            </a>
+                        </div>
+                        <div class="comment-box">
+                            <a href="/comment" class="text-decoration-none">
+                                <button id="board-comment" class="text-white">게시판 댓글</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
