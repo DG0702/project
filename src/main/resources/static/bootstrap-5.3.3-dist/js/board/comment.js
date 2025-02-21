@@ -4,12 +4,17 @@ document.querySelector("#comment-regi").addEventListener("submit",function (e) {
     e.preventDefault()
 
 
+
     const userNo = document.querySelector("#userNo").value
     const boardId = document.querySelector("#boardId").value
     const comment = document.querySelector("#comment").value
     const userNickname = document.querySelector("#writer").innerText
     const replyCount = document.querySelector("#replyCount")
 
+    if(!comment.trim()){
+        alert("내용을 채워주세요!")
+        return
+    }
 
     try{
         // 비동기 실행
@@ -49,7 +54,7 @@ document.querySelector("#comment-regi").addEventListener("submit",function (e) {
                                 </div>
                             </div>`
 
-                    commentList.prepend(newCommentItem)
+                    commentList.appendChild(newCommentItem)
                     document.querySelector("#comment").value = "";
 
                     // 댓글 수 증가 코드
