@@ -68,9 +68,21 @@ public class MypageController {
         // 전체 페이지 수
         int totalPage = boardpage.getTotalPages();
 
+        // 페이지 번호 그룹화 할 범위
+        int pagesPerGroup = 10;
+
+        // 현재 그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1;
+
+        // 그룹 끝페이지
+        int endPage = Math.min(startPage + pagesPerGroup - 1, totalPage);
+
         // 페이지 번호 생성 -> Integer(순서)
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i <= totalPage; i++){
+        for(int i = startPage; i <= endPage; i++){
             pages.add(i);
         }
 
@@ -153,12 +165,23 @@ public class MypageController {
         // 내가 쓴 댓글 리스트
         Page<Comment> commentPage = commentService.getMyComments(userNo,page,size);
 
-
         // 전체페이지
         int totalPages = commentPage.getTotalPages();
 
+        // 페이지 번호 그룹화 할 범위
+        int pagesPerGroup = 10;
+
+        // 현재 그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1;
+
+        // 그룹 끝페이지
+        int endPage = Math.min(startPage + pagesPerGroup - 1, totalPages);
+
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i<= totalPages; i++){
+        for(int i = startPage; i<= endPage; i++){
             pages.add(i);
         }
         

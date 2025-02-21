@@ -61,9 +61,21 @@ public class BoardController {
         // 전체 페이지 수 계산
         int totalPages = boardPage.getTotalPages();
 
+        // 페이지 번호 그룹화 할 범위 설정
+        int pagesPerGroup = 10;
+
+        // 현재 그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1 ;
+        
+        // 그룹 끝페이지
+        int endPage = Math.min(startPage + pagesPerGroup - 1 , totalPages);
+
         // 페이지 번호 배열 생성  --> Integer : 객체의 순서 있는 컬렉션
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i <=totalPages; i++){
+        for(int i = startPage; i <=endPage; i++){
             pages.add(i);
         }
 
@@ -113,10 +125,22 @@ public class BoardController {
 
         // 전체 페이지 수
         int totalPage = boardPage.getTotalPages();
+        
+        // 페이지 번호 그룹화 할 범위
+        int pagesPerGroup = 10;
+
+        // 현재그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1 ;
+
+        // 그룹 끝 페이지
+        int endPage = Math.min(startPage + pagesPerGroup - 1 , totalPage);
 
         // 페이지 수 배열로 생성
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i <= totalPage; i++){
+        for(int i = startPage; i <= endPage; i++){
             pages.add(i);
         }
         // 페이징 된 객체에 게시물 리스트

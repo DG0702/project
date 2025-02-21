@@ -10,6 +10,7 @@ import com.project.project.service.MenuCategoryService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -76,7 +77,10 @@ public class ManagerRestController {
 
     // 댓글 검색
     @GetMapping("/comment/search")
-    public ResponseEntity<Map<String,Object>> searchComment(@RequestParam ("keyword") String keyword, Pageable pageable){
+    public ResponseEntity<Map<String,Object>> searchComment(@RequestParam ("keyword") String keyword, @RequestParam(defaultValue = "1") int page){
+
+        // 페이징 처리
+        Pageable pageable = PageRequest.of(page-1,10);
 
         // 검색한 단어 가져오기
         Page<CommentWithTitle> commentPage = commentService.searchCommentWithBoardInfo(keyword,pageable);
@@ -84,8 +88,20 @@ public class ManagerRestController {
         // 전체 페이지 수
         int totalPage = commentPage.getTotalPages();
 
+        // 페이지 번호 그룹화 할 범위
+        int pagesPerGroup = 10;
+
+        // 현재 그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1;
+
+        // 그룹 끝페이지
+        int endPage = Math.min(startPage + pagesPerGroup -1, totalPage);
+
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i <= totalPage; i++){
+        for(int i = startPage; i <= endPage; i++){
             pages.add(i);
         }
 

@@ -6,6 +6,7 @@ import com.project.project.service.BoardService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,16 +33,32 @@ public class BoardRestController {
 
     // 게시물 검색, 페이징처리
     @GetMapping("/board/search")
-    public ResponseEntity<Map<String,Object>> searchBoard(@RequestParam ("keyword") String keyword , Pageable pageable ){
+    public ResponseEntity<Map<String,Object>> searchBoard(@RequestParam ("keyword") String keyword , @RequestParam (defaultValue = "1") int page){
+        // 페이징 단위 맟추기
+        Pageable pageable = PageRequest.of(page - 1,10);
+
         // 검색한 단어 데이터로 가져오기 (페이징할 객체도 가져오기)
         Page<BoardWithInfo> boardPage = boardService.searchBoardWithInfo(keyword,pageable);
+
 
         // 전체 페이지 수
         int totalPage = boardPage.getTotalPages();
 
+        // 페이지 번호 그룹화 할 범위
+        int pagesPerGroup = 10;
+
+        // 현재 그룹
+        int currentGroup = (page-1) / pagesPerGroup;
+
+        // 그룹 시작페이지
+        int startPage = currentGroup * pagesPerGroup + 1;
+
+        // 그룹 끝 페이지
+        int endPage = Math.min(startPage + pagesPerGroup - 1, totalPage);
+
         // 페이지 수 배열로 생성
         List<Integer> pages = new ArrayList<>();
-        for(int i = 1; i <= totalPage; i++){
+        for(int i = startPage; i <= endPage; i++){
             pages.add(i);
         }
 

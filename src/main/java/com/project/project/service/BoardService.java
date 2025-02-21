@@ -242,7 +242,7 @@ public class BoardService {
     }
 
     
-    // 검색한 단어 ->  좋아요, 조회 수 추가
+    // 검색한 단어
     public Page<BoardWithInfo> searchBoardWithInfo(String keyword, Pageable pageable){
         // 검색한 단어 추출
         Page<Board> searchBoard = searchBoard(keyword,pageable);
