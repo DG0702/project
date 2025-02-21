@@ -1,7 +1,6 @@
 package com.project.project.service;
 
 import com.project.project.dto.BoardWithInfo;
-import com.project.project.dto.PostsDTO;
 import com.project.project.entity.AttachedFile;
 import com.project.project.entity.Board;
 import com.project.project.entity.Member;
@@ -12,7 +11,6 @@ import com.project.project.repository.LikesRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -28,29 +26,33 @@ import java.util.List;
 @Slf4j
 public class BoardService {
 
-    @Autowired
-    private BoardRepository boardRepository;
 
-    @Autowired
-    private LikesService likesService;
+    private final BoardRepository boardRepository;
 
-    @Autowired
-    private CommentService commentService;
+    private final LikesService likesService;
 
-    @Autowired
-    private AttachedFileRepository attachedFileRepository;
+    private final CommentService commentService;
 
-    @Autowired
-    private FileService fileService;
+    private final AttachedFileRepository attachedFileRepository;
 
-    @Autowired
-    private LikesRepository likesRepository;
+    private final FileService fileService;
 
-    @Autowired
-    private CommentRepository commentRepository;
+    private final LikesRepository likesRepository;
 
+    private final CommentRepository commentRepository;
 
-
+    // 의존성 주입
+    public BoardService(BoardRepository boardRepository, LikesService likesService, CommentService commentService,
+                        AttachedFileRepository attachedFileRepository, FileService fileService, LikesRepository likesRepository,
+                        CommentRepository commentRepository) {
+        this.boardRepository = boardRepository;
+        this.likesService = likesService;
+        this.commentService = commentService;
+        this.attachedFileRepository = attachedFileRepository;
+        this.fileService = fileService;
+        this.likesRepository = likesRepository;
+        this.commentRepository = commentRepository;
+    }
 
     // 게시물 쓰기
     public Board createPost(Board board){

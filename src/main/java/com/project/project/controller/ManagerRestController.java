@@ -1,25 +1,20 @@
 package com.project.project.controller;
 
-import com.project.project.dto.CommentWithInfo;
+
 import com.project.project.dto.CommentWithTitle;
 import com.project.project.entity.Member;
-import com.project.project.entity.MenuCategory;
 import com.project.project.repository.UserRoleRepository;
 import com.project.project.service.BoardService;
 import com.project.project.service.CommentService;
 import com.project.project.service.MenuCategoryService;
 import jakarta.servlet.http.HttpSession;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,14 +24,21 @@ import java.util.Map;
 @Slf4j
 public class ManagerRestController {
 
-    @Autowired
-    private MenuCategoryService menuCategoryService;
-    @Autowired
-    private CommentService commentService;
-    @Autowired
-    private BoardService boardService;
-    @Autowired
-    private UserRoleRepository userRoleRepository;
+    private final MenuCategoryService menuCategoryService;
+
+    private final CommentService commentService;
+
+    private final BoardService boardService;
+
+    private final UserRoleRepository userRoleRepository;
+
+    // 의존성 주입
+    public ManagerRestController(MenuCategoryService menuCategoryService, CommentService commentService, BoardService boardService, UserRoleRepository userRoleRepository){
+        this.menuCategoryService = menuCategoryService;
+        this.commentService = commentService;
+        this.boardService = boardService;
+        this.userRoleRepository = userRoleRepository;
+    }
 
     // 뉴스 메뉴 수정
     @PatchMapping("/manager/news")

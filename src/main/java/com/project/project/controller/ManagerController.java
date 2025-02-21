@@ -4,14 +4,11 @@ import com.project.project.dto.CommentWithInfo;
 import com.project.project.dto.CommentWithTitle;
 import com.project.project.entity.AttachedFile;
 import com.project.project.entity.Comment;
-import com.project.project.entity.Member;
 import com.project.project.entity.MenuCategory;
 import com.project.project.repository.MenuCategoryRepository;
 import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
-import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -19,8 +16,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,14 +23,18 @@ import java.util.List;
 @Slf4j
 public class ManagerController {
 
-    @Autowired
-    private MenuCategoryRepository menuCategoryRepository;
+    private final MenuCategoryRepository menuCategoryRepository;
 
-    @Autowired
-    private FileService fileService;
+    private final FileService fileService;
 
-    @Autowired
-    private CommentService commentService;
+    private final CommentService commentService;
+
+    // 의존성 주입
+    public ManagerController(MenuCategoryRepository menuCategoryRepository, FileService fileService, CommentService commentService) {
+        this.menuCategoryRepository = menuCategoryRepository;
+        this.fileService = fileService;
+        this.commentService = commentService;
+    }
 
     // 뉴스 수정 페이지 이동 
     @GetMapping("/manager/news")

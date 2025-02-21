@@ -12,7 +12,6 @@ import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -23,21 +22,22 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 @Slf4j
 public class BoardController {
 
+    private final BoardService boardService;
+    private final CommentService commentService;
+    private final FileService fileService;
+
     // 의존성 주입
-    @Autowired
-    private BoardService boardService;
-    @Autowired
-    private CommentService commentService;
-    @Autowired
-    private FileService fileService;
+    public BoardController(BoardService boardService, CommentService commentService, FileService fileService) {
+        this.boardService = boardService;
+        this.commentService = commentService;
+        this.fileService = fileService;
+    }
 
     // 게시판 이동 (게시물 정보 조회)
     @GetMapping("/board")

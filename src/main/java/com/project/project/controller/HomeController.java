@@ -1,39 +1,32 @@
 package com.project.project.controller;
 
-import com.project.project.dto.PostsDTO;
+
 import com.project.project.entity.AttachedFile;
-import com.project.project.entity.Board;
 import com.project.project.entity.Member;
 import com.project.project.entity.MenuCategory;
-import com.project.project.repository.AttachedFileRepository;
-import com.project.project.repository.BoardRepository;
-import com.project.project.repository.MemberRepository;
 import com.project.project.repository.MenuCategoryRepository;
 import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 @Slf4j
 public class HomeController {
-    @Autowired
-    private BoardRepository boardRepository;
 
-    @Autowired
-    private MenuCategoryRepository menuCategoryRepository;
+    private final MenuCategoryRepository menuCategoryRepository;
 
-    @Autowired
-    private FileService fileService;
+    private final FileService fileService;
+
+    // 의존성 주입
+    public HomeController(MenuCategoryRepository menuCategoryRepository, FileService fileService) {
+        this.menuCategoryRepository = menuCategoryRepository;
+        this.fileService = fileService;
+    }
 
 
 
@@ -107,9 +100,6 @@ public class HomeController {
                 unknowns.add(filePath);
             }
         }
-
-
-
 
         model.addAttribute("menuCategory", menuCategory);
         model.addAttribute("hasAttachedFiles", hasAttachedFiles);

@@ -1,5 +1,4 @@
 package com.project.project.controller;
-
 import com.project.project.dto.BoardWithInfo;
 import com.project.project.dto.CommentWithInfo;
 import com.project.project.entity.AttachedFile;
@@ -9,11 +8,8 @@ import com.project.project.entity.Member;
 import com.project.project.service.BoardService;
 import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
-import com.project.project.service.LikesService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,16 +24,18 @@ import java.util.List;
 @Slf4j
 public class MypageController {
 
-    @Autowired
-    BoardService boardService;
+    private final BoardService boardService;
 
-    @Autowired
-    LikesService likesService;
+    private final CommentService commentService;
 
-    @Autowired
-    CommentService commentService;
-    @Autowired
-    private FileService fileService;
+    private final FileService fileService;
+
+    // 의존성 주입
+    public MypageController(BoardService boardService, CommentService commentService, FileService fileService) {
+        this.boardService = boardService;
+        this.commentService = commentService;
+        this.fileService = fileService;
+    }
 
     // 회원 정보 수정 이동
     @GetMapping("/users/modification")

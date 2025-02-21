@@ -11,34 +11,33 @@ import com.project.project.repository.MenuCategoryRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.env.PropertyResolver;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.util.UrlPathHelper;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Service
 @Slf4j
 public class FileService {
 
-    @Autowired
-    private AttachedFileRepository attachedFileRepository;
-    @Autowired
-    private BoardRepository boardRepository;
-    @Autowired
-    private MenuCategoryRepository menuCategoryRepository;
+
+    private final AttachedFileRepository attachedFileRepository;
+
+    private final BoardRepository boardRepository;
+
+    private final MenuCategoryRepository menuCategoryRepository;
+
+    // 의존성 주입
+    public FileService(AttachedFileRepository attachedFileRepository, BoardRepository boardRepository,
+                       MenuCategoryRepository menuCategoryRepository) {
+        this.attachedFileRepository = attachedFileRepository;
+        this.boardRepository = boardRepository;
+        this.menuCategoryRepository = menuCategoryRepository;
+    }
 
 
     // 파일을 서버에 업로드하고 파일 정보를 데이터베이스에 저장하는 역할 

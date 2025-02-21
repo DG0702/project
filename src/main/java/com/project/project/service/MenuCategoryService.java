@@ -5,7 +5,6 @@ import com.project.project.repository.MenuCategoryRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -15,10 +14,15 @@ import java.io.IOException;
 @Slf4j
 public class MenuCategoryService {
 
-    @Autowired
-    private MenuCategoryRepository menuCategoryRepository;
-    @Autowired
-    private FileService fileService;
+    private final MenuCategoryRepository menuCategoryRepository;
+
+    private final FileService fileService;
+
+    // 의존성 주입
+    public MenuCategoryService(MenuCategoryRepository menuCategoryRepository, FileService fileService) {
+        this.menuCategoryRepository = menuCategoryRepository;
+        this.fileService = fileService;
+    }
 
     @Transactional
     public MenuCategory updateNews(Long menuId, String title, String contents, MultipartFile [] files, HttpSession session) {

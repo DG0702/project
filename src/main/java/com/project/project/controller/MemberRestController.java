@@ -1,24 +1,25 @@
 package com.project.project.controller;
 
 import com.project.project.entity.Member;
-import com.project.project.repository.MemberRepository;
 import com.project.project.service.MemberService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 @RestController
 @Slf4j
 public class MemberRestController {
 
-    @Autowired
-    private MemberService memberService;
+
+    private final MemberService memberService;
+
+    // 의존성 주입
+    public MemberRestController(MemberService memberService) {
+        this.memberService = memberService;
+    }
 
     // 아이디 중복검사
     @GetMapping("/users/check-id")

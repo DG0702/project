@@ -2,7 +2,6 @@ package com.project.project.service;
 
 import com.project.project.entity.Likes;
 import com.project.project.repository.LikesRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -10,8 +9,13 @@ import java.util.Optional;
 @Service
 public class LikesService {
 
-    @Autowired
-    private LikesRepository likesRepository;
+
+    private final LikesRepository likesRepository;
+
+    // 의존성 주입
+    public LikesService(LikesRepository likesRepository) {
+        this.likesRepository = likesRepository;
+    }
 
     // Optional<> 반환값은 객체
     // isPresent() 객체에 값이 존재하는지 안하는지 true,false 표현

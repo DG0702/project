@@ -1,13 +1,10 @@
 package com.project.project.repository;
 
-import com.project.project.dto.BoardWithInfo;
 import com.project.project.entity.Board;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 
-import java.util.ArrayList;
 
 public interface BoardRepository extends JpaRepository<Board,Long> {
     // Board 엔티티 모든 데이터 조회 >> 데이터베이스 Board 테이블에 저장된 모든 행을 조회

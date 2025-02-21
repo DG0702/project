@@ -10,25 +10,26 @@ import com.project.project.repository.UserRoleRepository;
 import jakarta.transaction.Transactional;
 import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
 @Service
 @Slf4j
 @Builder
 public class MemberService {
-    // 의존성 주입
-    @Autowired
-    private MemberRepository memberRepository;
 
-    @Autowired
-    private RoleRepository roleRepository;
-    @Autowired
-    private UserRoleRepository userRoleRepository;
+    private final MemberRepository memberRepository;
+
+    private final RoleRepository roleRepository;
+
+    private final UserRoleRepository userRoleRepository;
+
+    // 의존성 주입
+    public MemberService(MemberRepository memberRepository, RoleRepository roleRepository, UserRoleRepository userRoleRepository) {
+        this.memberRepository = memberRepository;
+        this.roleRepository = roleRepository;
+        this.userRoleRepository = userRoleRepository;
+    }
 
 
     // 로그인

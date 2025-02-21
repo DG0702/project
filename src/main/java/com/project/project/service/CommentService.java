@@ -9,7 +9,6 @@ import com.project.project.entity.Member;
 import com.project.project.repository.BoardRepository;
 import com.project.project.repository.CommentRepository;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -22,11 +21,16 @@ import java.util.List;
 @Service
 public class CommentService {
 
-    @Autowired
-    private CommentRepository commentRepository;
 
-    @Autowired
-    private BoardRepository boardRepository;
+    private final CommentRepository commentRepository;
+
+    private final BoardRepository boardRepository;
+
+    // 의존성 주입
+    public CommentService(CommentRepository commentRepository, BoardRepository boardRepository) {
+        this.commentRepository = commentRepository;
+        this.boardRepository = boardRepository;
+    }
 
     // 댓글 등록
     public Boolean addComment(CommentDTO commentDTO) {

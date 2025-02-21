@@ -2,12 +2,9 @@ package com.project.project.controller;
 
 import com.project.project.dto.BoardWithInfo;
 import com.project.project.entity.Board;
-
 import com.project.project.service.BoardService;
-import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -23,11 +20,15 @@ import java.util.Map;
 @Slf4j
 public class BoardRestController {
 
-    @Autowired
-    private BoardService boardService;
 
-    @Autowired
-    private FileService fileService;
+    private final BoardService boardService;
+
+    // 의존성 주입
+    public BoardRestController(BoardService boardService) {
+        this.boardService = boardService;
+    }
+
+
 
     // 게시물 검색, 페이징처리
     @GetMapping("/board/search")

@@ -1,11 +1,9 @@
 package com.project.project.controller;
 
-import com.project.project.entity.Board;
 import com.project.project.entity.Member;
 import com.project.project.service.MemberService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,8 +15,12 @@ import java.util.Map;
 @Slf4j
 public class MypageRestController {
 
-    @Autowired
-    private MemberService memberService;
+    private final MemberService memberService;
+
+    // 의존성 주입
+    public MypageRestController(MemberService memberService) {
+        this.memberService = memberService;
+    }
     
     // 회원 정보 수정 유저확인
     @PostMapping("/validUser")

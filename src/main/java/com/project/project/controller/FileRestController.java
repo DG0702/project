@@ -2,7 +2,6 @@ package com.project.project.controller;
 
 import com.project.project.service.FileService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class FileRestController {
 
-    @Autowired
-    private FileService fileService;
+
+    private final FileService fileService;
+
+    // 의존성 주입
+    public FileRestController (FileService fileService){
+        this.fileService = fileService;
+    }
 
     // 게시물 파일 제공 API --> 사실상 경로
     @GetMapping("/uploads/{filename}")
