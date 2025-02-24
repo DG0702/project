@@ -39,6 +39,13 @@ public class FileService {
         this.menuCategoryRepository = menuCategoryRepository;
     }
 
+    // 파일 존재 여부 확인 메서드 (uploads 경로에서만 확인)
+    private boolean isFileExists(String fileName){
+        String uploadDir= "C:\\project\\uploads\\";
+        File file = new File(uploadDir + fileName);
+        return file.exists();
+    }
+
 
     // 파일을 서버에 업로드하고 파일 정보를 데이터베이스에 저장하는 역할 
 
@@ -57,10 +64,14 @@ public class FileService {
         // 첨부파일이 여러 개일 경우
         for (MultipartFile file : files) {
             if (!file.isEmpty()) {
-
-
                 // 파일 저장 파일명 설정 (중복 방지를 위해 원본 파일명 앞에 현재시간밀리초로 표현)
                 String savedFileName = System.currentTimeMillis() + file.getOriginalFilename();
+
+                // 파일명 중복 체크 (파일이 존재하는지 확인)
+                if(isFileExists(savedFileName)){
+                    throw new IOException("파일이 이미 존재합니다.");
+                }
+
                 // 실제 파일이 저장될 경로를 지정하는 File 객체 생성
                 File dest = new File(uploadDir + savedFileName);
 
@@ -114,19 +125,17 @@ public class FileService {
 
     public Resource getPostFile (String filename){
         try {
+            // 파일이 존재하는지 확인
+            if (!isFileExists(filename)){
+                throw new IOException("파일이 존재하지 않습니다.");
+            }
 
             // 파일을 저장한 디렉토리 경로
             String uploadDir= "C:\\project\\uploads\\";
 
             // 지정된 경로에 있는 파일 -> 객체를 생성
             File file = new File(uploadDir + filename);
-
-
-            // 파일이 존재하지 않으면
-            if(!file.exists()){
-                return null;
-            }
-
+            
             // 파일이 존재하면 -> FileSystemResource 객체로 파일을 래핑하여 반환
             // FileSystemResource -> Resource 인터페이스 구현체 , 파일을 읽고 쓸수 있음
             return new FileSystemResource(file);
@@ -180,28 +189,31 @@ public class FileService {
 
                 // 임시 파일을 최종 저장 디렉토리로 이동
                 File finalFile = new File(uploadDir + savedFileName);
-                if(tempFile.renameTo(finalFile)){
+
+                if (tempFile.exists()) {
+                    if(tempFile.renameTo(finalFile)){
 
 
-                    // 파일 정보 DTO 업데이트
-                    attachedFileData.setUploadId(member.getUserId());
-                    attachedFileData.setPath1(savedFileName);
-                    attachedFileData.setSavedName(savedFileName);
-                    attachedFileData.setFileSize(String.valueOf(finalFile.length()));
+                        // 파일 정보 DTO 업데이트
+                        attachedFileData.setUploadId(member.getUserId());
+                        attachedFileData.setPath1(savedFileName);
+                        attachedFileData.setSavedName(savedFileName);
+                        attachedFileData.setFileSize(String.valueOf(finalFile.length()));
 
 
 
-                    // DTO -> Entity 변환 후 저장
-                    AttachedFile attachedFile = attachedFileData.toEntity();
-                    attachedFile = attachedFileRepository.save(attachedFile);
+                        // DTO -> Entity 변환 후 저장
+                        AttachedFile attachedFile = attachedFileData.toEntity();
+                        attachedFile = attachedFileRepository.save(attachedFile);
 
-                    // 저장된 파일을 리스트에 추가
-                    return attachedFile;
+                        // 저장된 파일을 리스트에 추가
+                        return attachedFile;
+                    }else{
+                        throw new RuntimeException("파일을 최종 디렉토리로 이동하는데 실패했습니다");
+                    }
                 }else{
-                    throw new RuntimeException("파일을 최종 디렉토리로 이동하는데 실패했습니다");
+                    throw new IOException("임시 파일이 존재하지 않습니다.");
                 }
-
-
 
 
             }
@@ -257,6 +269,8 @@ public class FileService {
 
         // 새로운 파일 업로드,저장
         for(MultipartFile file : files){
+            
+            // 파일이 존재한다면 (하나씩 확인 하기 위해 .isEmpty() 사용)
             if(!file.isEmpty()){
                 // 새 파일을 업로드하고 저장
                 try {
@@ -297,7 +311,7 @@ public class FileService {
             throw new IllegalArgumentException("게시물을 찾을 수 없습니다");
         }
 
-        // 새로운 첨부파일이 있을경우
+        // 새로운 첨부파일이 있을경우 (배열이기 때문에 != null, length > 0 사용)
         if (files != null && files.length > 0) {
             // 기존 파일이 있을 경우에만 삭제 (데이터베이스와 실제 서버 둘다 삭제)
             if (!existingBoard.getAttachedFileList().isEmpty()) {
@@ -357,7 +371,7 @@ public class FileService {
         String uploadDir = "C:\\project\\news\\";
 
 
-        // 파일이 비어 있지 않을 경우
+        // 파일이 존재할 경우 (파일 1개씩 .isEmpty() 사용)
         if(!file.isEmpty()) {
 
             String originalFileName = file.getOriginalFilename();
@@ -448,6 +462,7 @@ public class FileService {
 
         System.out.println("add 실행");
         for(MultipartFile file : files){
+            // 파일이 존재한다면 (파일 1개씩 .isEmpty() 사용)
             if(!file.isEmpty()){
                 try {
                     // DTO 생성
@@ -484,7 +499,7 @@ public class FileService {
             throw new IllegalArgumentException("메뉴를 찾을 수 없습니다");
         }
 
-
+        // 배열 (!= null , length > 0) 사용
         if(files != null && files.length > 0 ){
             if(!existingMenuId.getAttachedFileList().isEmpty()){
                 try {
@@ -517,17 +532,16 @@ public class FileService {
 
     public Resource getNewsFile (String filename){
         try {
-
+            
             // 파일을 저장한 디렉토리 경로
             String uploadDir= "C:\\project\\news\\";
 
             // 지정된 경로에 있는 파일 -> 객체를 생성
             File file = new File(uploadDir + filename);
 
-
-            // 파일이 존재하지 않으면
-            if(!file.exists()){
-                return null;
+            // 파일이 존재하는지 확인
+            if (!file.exists()){
+                throw new IOException("파일이 존재하지 않습니다.");
             }
 
             // 파일이 존재하면 -> FileSystemResource 객체로 파일을 래핑하여 반환

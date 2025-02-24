@@ -6,6 +6,8 @@ document.querySelector("#editForm").addEventListener("submit",function (e) {
     // 폼 데이터 가져오기
     const formData = new FormData(this);
 
+    // 실제 유저 No 가져오기
+    const userId = document.querySelector("#userId").value
 
     // 실제 게시물 ID 가져오기
     const boardId = document.querySelector("#boardId").value
@@ -45,7 +47,7 @@ document.querySelector("#editForm").addEventListener("submit",function (e) {
                 return response.json()
             })
             .then(data => {
-                window.location.href = `/users/posts`
+                window.location.href = `/users/${userId}/posts`
             })
             .catch(error => {
                 alert("게시물 수정에 오류 발생 " + error.message)
