@@ -102,7 +102,7 @@ function renderSearchResults(data) {
                 tr.innerHTML =
                     `<th scope="row">${item.board.boardId}</th>
                     <td>
-                        <a href="#" class="text-decoration-none text-black">${item.board.title}</a>
+                        <a href="/posts/${item.board.boardId}" class="text-decoration-none text-black">${item.board.title}</a>
                     </td>
                     <td>${item.board.userNickname}</td>
                     <td>${item.board.formattedCreateTime}</td>

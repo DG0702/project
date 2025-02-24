@@ -137,7 +137,7 @@ public class ManagerController {
     }
 
 
-    // 댓글 검색 페이지 이동
+    // 댓글 검색 후 페이지 이동
     @GetMapping("/comments/search")
     public String commentsSearch(@RequestParam String keyword, @RequestParam (defaultValue = "1") int page, Model model){
 
@@ -145,10 +145,10 @@ public class ManagerController {
         Pageable pageable = PageRequest.of(page-1 , 10);
         // 검색한 댓글 가져오기
         Page<CommentWithTitle> commentPage = commentService.searchCommentWithBoardInfo(keyword,pageable);
-        
+
         // 전체 댓글
         int totalPage = commentPage.getTotalPages();
-        
+
         // 페이지 번호 그룹화 할 범위
         int pagesPerGroup = 10;
 
@@ -160,7 +160,7 @@ public class ManagerController {
 
         // 그룹 끝페이지
         int endPage = Math.min(startPage + pagesPerGroup - 1, totalPage);
-        
+
         List<Integer> pages = new ArrayList<>();
         for(int i = startPage; i <= endPage; i++){
             pages.add(i);

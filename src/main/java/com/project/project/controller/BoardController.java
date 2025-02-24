@@ -114,59 +114,59 @@ public class BoardController {
     }
 
 
-    // 게시물 검색 페이지 이동
-    @GetMapping("/posts/search")
-    public String search(@RequestParam String keyword, @RequestParam (defaultValue = "1") int page , Model model){
-
-        // 페이지 단위 맞추기 (필요)
-        Pageable pageable = PageRequest.of(page - 1, 10);
-        // 검색한 단어 데이터로 가져오기 (페이징할 객체도 가져오기)
-        Page<BoardWithInfo> boardPage = boardService.searchBoardWithInfo(keyword,pageable);
-
-        // 전체 페이지 수
-        int totalPage = boardPage.getTotalPages();
-        
-        // 페이지 번호 그룹화 할 범위
-        int pagesPerGroup = 10;
-
-        // 현재그룹
-        int currentGroup = (page-1) / pagesPerGroup;
-
-        // 그룹 시작페이지
-        int startPage = currentGroup * pagesPerGroup + 1 ;
-
-        // 그룹 끝 페이지
-        int endPage = Math.min(startPage + pagesPerGroup - 1 , totalPage);
-
-        // 페이지 수 배열로 생성
-        List<Integer> pages = new ArrayList<>();
-        for(int i = startPage; i <= endPage; i++){
-            pages.add(i);
-        }
-        // 페이징 된 객체에 게시물 리스트
-        model.addAttribute("boardWithInfos",boardPage.getContent());
-
-        // 이전 페이지 활성화
-        model.addAttribute("hasPrevious",boardPage.hasPrevious());
-
-        // 다음 페이지 활성화
-        model.addAttribute("hasNext",boardPage.hasNext());
-
-        // 전체 페이지 수
-        model.addAttribute("pages",pages);
-
-        // 이전 페이지
-        model.addAttribute("previousPage",page -1);
-
-        // 다음 페이지
-        model.addAttribute("nextPage",page + 1);
-
-        model.addAttribute("keyword",keyword);
-
-
-
-        return "/board/board_search";
-    }
+//    // 게시물 검색 페이지 이동
+//    @GetMapping("/posts/search")
+//    public String search(@RequestParam String keyword, @RequestParam (defaultValue = "1") int page , Model model){
+//
+//        // 페이지 단위 맞추기 (필요)
+//        Pageable pageable = PageRequest.of(page - 1, 10);
+//        // 검색한 단어 데이터로 가져오기 (페이징할 객체도 가져오기)
+//        Page<BoardWithInfo> boardPage = boardService.searchBoardWithInfo(keyword,pageable);
+//
+//        // 전체 페이지 수
+//        int totalPage = boardPage.getTotalPages();
+//
+//        // 페이지 번호 그룹화 할 범위
+//        int pagesPerGroup = 10;
+//
+//        // 현재그룹
+//        int currentGroup = (page-1) / pagesPerGroup;
+//
+//        // 그룹 시작페이지
+//        int startPage = currentGroup * pagesPerGroup + 1 ;
+//
+//        // 그룹 끝 페이지
+//        int endPage = Math.min(startPage + pagesPerGroup - 1 , totalPage);
+//
+//        // 페이지 수 배열로 생성
+//        List<Integer> pages = new ArrayList<>();
+//        for(int i = startPage; i <= endPage; i++){
+//            pages.add(i);
+//        }
+//        // 페이징 된 객체에 게시물 리스트
+//        model.addAttribute("boardWithInfos",boardPage.getContent());
+//
+//        // 이전 페이지 활성화
+//        model.addAttribute("hasPrevious",boardPage.hasPrevious());
+//
+//        // 다음 페이지 활성화
+//        model.addAttribute("hasNext",boardPage.hasNext());
+//
+//        // 전체 페이지 수
+//        model.addAttribute("pages",pages);
+//
+//        // 이전 페이지
+//        model.addAttribute("previousPage",page -1);
+//
+//        // 다음 페이지
+//        model.addAttribute("nextPage",page + 1);
+//
+//        model.addAttribute("keyword",keyword);
+//
+//
+//
+//        return "/board/board_search";
+//    }
 
 
 

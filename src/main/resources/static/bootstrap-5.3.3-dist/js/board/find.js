@@ -30,8 +30,6 @@ document.querySelector("#find").addEventListener("submit", function (e) {
                 return response.json()
             })
             .then(data =>{
-                console.log(data)
-                console.log(data.comments)
                 renderSearchResults(data)
                 renderPage(data)
             })
@@ -61,15 +59,15 @@ function renderSearchResults (data){
 
         let thead =
             `<thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">게시물 번호</th>
-                <th scope="col">작성자</th>
-                <th scope="col">제목</th>
-                <th scope="col">댓글 내용 </th>
-                <th scope="col">작성일</th>
-                <th scope="col">삭제</th>
-            </tr>
+                <tr>
+                    <th scope="col">댓글 번호</th>
+                    <th scope="col">게시물 번호</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">댓글 내용 </th>
+                    <th scope="col">작성일</th>
+                    <th scope="col">삭제</th>
+                </tr>
             </thead>`
 
         table.innerHTML = thead;
@@ -84,7 +82,7 @@ function renderSearchResults (data){
                     <td>${item.comment.commentId}</td>
                     <td>${item.comment.userNickname}</td>
                     <td>
-                        <a href="/posts/{{board.boardId}}" class="text-decoration-none text-black">${item.title}</a>
+                        <a href="/posts/${item.comment.boardId}" class="text-decoration-none text-black">${item.title}</a>
                     </td>
                     <td>${item.comment.comment}</td>
                     <td>${item.comment.formattedCreateTime}</td>

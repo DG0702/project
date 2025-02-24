@@ -208,6 +208,7 @@ public class CommentService {
 
     // 검색한 댓글 + 관련된 게시물 가져오기
     public Page<CommentWithTitle> searchCommentWithBoardInfo(String keyword, Pageable pageable){
+
         // 검색한 댓글 가져오기
         Page<Comment> searchComment = searchComment(keyword,pageable);
 

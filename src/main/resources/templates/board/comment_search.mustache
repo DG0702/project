@@ -59,23 +59,23 @@
                 </thead>
                 <tbody>
                 {{#commentWithInfos}}
-                    <tr>
-                        <th scope="row">
-                            <input class="form-check-input" type="checkbox" name="check-num" value="{{comment.commentId}}">
-                        </th>
-                        <td>{{comment.boardId}}</td>
-                        <td>{{comment.userNickname}}</td>
-                        <td>
-                            <a href="/posts/{{comment.boardId}}" class="text-decoration-none text-black">{{title}}</a>
-                        </td>
-                        <td>{{comment.comment}}</td>
-                        <td>{{comment.formattedCreateTime}}</td>
-                        <td>
-                            <a class="text-decoration-none text-white">
-                                <button type="submit" class="btn btn-danger" id="post-delete-btn">삭제</button>
-                            </a>
-                        </td>
-                    </tr>
+                <tr>
+                    <th scope="row">
+                        {{comment.commentId}}
+                    </th>
+                    <td>{{comment.boardId}}</td>
+                    <td>{{comment.userNickname}}</td>
+                    <td>
+                        <a href="/posts/{{board.boardId}}" class="text-decoration-none text-black">{{title}}</a>
+                    </td>
+                    <td>{{comment.comment}}</td>
+                    <td>{{comment.formattedCreateTime}}</td>
+                    <td>
+                        <a class="text-decoration-none text-white">
+                            <button type="submit" class="btn btn-danger"  id="comment-delete" data-comment-id = {{comment.commentId}}>삭제</button>
+                        </a>
+                    </td>
+                </tr>
                 {{/commentWithInfos}}
                 </tbody>
             </table>
