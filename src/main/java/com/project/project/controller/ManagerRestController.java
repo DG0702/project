@@ -8,6 +8,7 @@ import com.project.project.service.BoardService;
 import com.project.project.service.CommentService;
 import com.project.project.service.MenuCategoryService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,25 +22,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class ManagerRestController {
 
+    // 의존성 주입
     private final MenuCategoryService menuCategoryService;
-
     private final CommentService commentService;
-
     private final BoardService boardService;
-
     private final UserRoleRepository userRoleRepository;
 
-    // 의존성 주입
-    public ManagerRestController(MenuCategoryService menuCategoryService, CommentService commentService, BoardService boardService, UserRoleRepository userRoleRepository){
-        this.menuCategoryService = menuCategoryService;
-        this.commentService = commentService;
-        this.boardService = boardService;
-        this.userRoleRepository = userRoleRepository;
-    }
+
 
     // 뉴스 메뉴 수정
     @PatchMapping("/manager/news")

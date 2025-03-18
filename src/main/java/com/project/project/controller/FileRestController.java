@@ -1,6 +1,7 @@
 package com.project.project.controller;
 
 import com.project.project.service.FileService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -9,17 +10,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class FileRestController {
 
-
+    // 의존성 주입
     private final FileService fileService;
 
-    // 의존성 주입
-    public FileRestController (FileService fileService){
-        this.fileService = fileService;
-    }
 
     // 게시물 파일 제공 API --> 사실상 경로
     @GetMapping("/uploads/{filename}")

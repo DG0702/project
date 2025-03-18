@@ -3,6 +3,7 @@ package com.project.project.controller;
 import com.project.project.entity.Member;
 import com.project.project.service.MemberService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,16 +12,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class MypageRestController {
 
+    // 의존성 주입
     private final MemberService memberService;
 
-    // 의존성 주입
-    public MypageRestController(MemberService memberService) {
-        this.memberService = memberService;
-    }
     
     // 회원 정보 수정 유저확인
     @PostMapping("/validUser")

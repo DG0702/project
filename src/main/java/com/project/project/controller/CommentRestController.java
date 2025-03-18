@@ -4,6 +4,7 @@ package com.project.project.controller;
 import com.project.project.dto.CommentDTO;
 import com.project.project.service.CommentService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,17 +14,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class CommentRestController {
 
-
+    // 의존성 주입
     private final CommentService commentService;
 
-    // 의존성 주입
-    public CommentRestController(CommentService commentService) {
-        this.commentService = commentService;
-    }
+
 
     // 댓글 작성
     @PostMapping("/comments/new")

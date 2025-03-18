@@ -5,6 +5,7 @@ import com.project.project.dto.MemberDTO;
 import com.project.project.entity.Member;
 import com.project.project.service.MemberService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,16 +13,15 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
+@RequiredArgsConstructor
 @Controller
 @Slf4j
 public class MemberController {
 
+    // 의존성 주입
     private final MemberService memberService;
 
-    // 의존성 주입
-    public MemberController(MemberService memberService) {
-        this.memberService = memberService;
-    }
+
 
     // 로그인 페이지 이동
     @GetMapping("/login-page")

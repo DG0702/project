@@ -8,6 +8,7 @@ import com.project.project.entity.MenuCategory;
 import com.project.project.repository.MenuCategoryRepository;
 import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -19,22 +20,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Controller
 @Slf4j
 public class ManagerController {
 
+    // 의존성 주입
     private final MenuCategoryRepository menuCategoryRepository;
-
     private final FileService fileService;
-
     private final CommentService commentService;
 
-    // 의존성 주입
-    public ManagerController(MenuCategoryRepository menuCategoryRepository, FileService fileService, CommentService commentService) {
-        this.menuCategoryRepository = menuCategoryRepository;
-        this.fileService = fileService;
-        this.commentService = commentService;
-    }
+
 
     // 뉴스 수정 페이지 이동 
     @GetMapping("/manager/news")

@@ -1,6 +1,7 @@
 package com.project.project.controller;
 
 import com.project.project.service.LikesService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,17 +9,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class LikesRestController {
 
-
+    // 의존성 주입
     private final LikesService likesService;
 
-    // 의존성 주입
-    public LikesRestController(LikesService likesService) {
-        this.likesService = likesService;
-    }
+
 
     // 게시글 조회 시 좋아요 상태
     @GetMapping("/posts/{boardId}/likes-status")

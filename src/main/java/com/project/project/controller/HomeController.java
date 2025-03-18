@@ -7,6 +7,7 @@ import com.project.project.entity.MenuCategory;
 import com.project.project.repository.MenuCategoryRepository;
 import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,19 +15,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Controller
 @Slf4j
 public class HomeController {
 
+    // 의존성 주입
     private final MenuCategoryRepository menuCategoryRepository;
-
     private final FileService fileService;
 
-    // 의존성 주입
-    public HomeController(MenuCategoryRepository menuCategoryRepository, FileService fileService) {
-        this.menuCategoryRepository = menuCategoryRepository;
-        this.fileService = fileService;
-    }
+
 
 
 

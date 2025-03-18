@@ -4,6 +4,7 @@ import com.project.project.dto.BoardWithInfo;
 import com.project.project.entity.Board;
 import com.project.project.service.BoardService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -17,17 +18,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @RestController
 @Slf4j
 public class BoardRestController {
 
-
+    // 의존성 주입
     private final BoardService boardService;
 
-    // 의존성 주입
-    public BoardRestController(BoardService boardService) {
-        this.boardService = boardService;
-    }
+
+
 
 
 

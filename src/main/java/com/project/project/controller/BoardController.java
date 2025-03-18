@@ -11,10 +11,9 @@ import com.project.project.service.BoardService;
 import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -24,20 +23,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Controller
 @Slf4j
 public class BoardController {
 
+    // 의존성 주입
     private final BoardService boardService;
     private final CommentService commentService;
     private final FileService fileService;
 
-    // 의존성 주입
-    public BoardController(BoardService boardService, CommentService commentService, FileService fileService) {
-        this.boardService = boardService;
-        this.commentService = commentService;
-        this.fileService = fileService;
-    }
 
     // 게시판 이동 (게시물 정보 조회)
     @GetMapping("/board")

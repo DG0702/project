@@ -9,6 +9,7 @@ import com.project.project.service.BoardService;
 import com.project.project.service.CommentService;
 import com.project.project.service.FileService;
 import jakarta.servlet.http.HttpSession;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -20,22 +21,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Controller
 @Slf4j
 public class MypageController {
 
+    // 의존성 주입
     private final BoardService boardService;
-
     private final CommentService commentService;
-
     private final FileService fileService;
 
-    // 의존성 주입
-    public MypageController(BoardService boardService, CommentService commentService, FileService fileService) {
-        this.boardService = boardService;
-        this.commentService = commentService;
-        this.fileService = fileService;
-    }
+
 
     // 회원 정보 수정 이동
     @GetMapping("/users/modification")
